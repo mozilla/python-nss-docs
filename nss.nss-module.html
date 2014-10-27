@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="ascii"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
           "DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -136,6 +137,14 @@ This module implements the NSS functions
     </td><td class="summary">
         <a href="nss.nss.CRLDistributionPts-class.html" class="summary-name">CRLDistributionPts</a><br />
       An object representing CRL Distribution Points list
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="nss.nss.CertAttribute-class.html" class="summary-name">CertAttribute</a><br />
+      CertAttribute()
     </td>
   </tr>
 <tr>
@@ -372,6 +381,23 @@ This module implements the NSS functions
           <td><span class="summary-sig"><a href="nss.nss-module.html#algtag_to_mechanism" class="summary-sig-name">algtag_to_mechanism</a>(<span class="summary-sig-arg">algtag</span>)</span><br />
       Returns the key mechanism enumeration constant (CKM_*)
 given an algorithm tag.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">SecItem</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss-module.html#base64_to_binary" class="summary-sig-name">base64_to_binary</a>(<span class="summary-sig-arg">text</span>)</span><br />
+      Convert the base64 encoded data to binary data.</td>
           <td align="right" valign="top">
             
             
@@ -2200,6 +2226,69 @@ usage bit string.</td>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
+        <a name="CERTDB_GOVT_APPROVED_CA"></a><span class="summary-name">CERTDB_GOVT_APPROVED_CA</span> = <code title="512">512</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CERTDB_NS_TRUSTED_CA"></a><span class="summary-name">CERTDB_NS_TRUSTED_CA</span> = <code title="32">32</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CERTDB_SEND_WARN"></a><span class="summary-name">CERTDB_SEND_WARN</span> = <code title="4">4</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CERTDB_TERMINAL_RECORD"></a><span class="summary-name">CERTDB_TERMINAL_RECORD</span> = <code title="1">1</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CERTDB_TRUSTED"></a><span class="summary-name">CERTDB_TRUSTED</span> = <code title="2">2</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CERTDB_TRUSTED_CA"></a><span class="summary-name">CERTDB_TRUSTED_CA</span> = <code title="16">16</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CERTDB_TRUSTED_CLIENT_CA"></a><span class="summary-name">CERTDB_TRUSTED_CLIENT_CA</span> = <code title="128">128</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CERTDB_USER"></a><span class="summary-name">CERTDB_USER</span> = <code title="64">64</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CERTDB_VALID_CA"></a><span class="summary-name">CERTDB_VALID_CA</span> = <code title="8">8</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
         <a name="CKA_AC_ISSUER"></a><span class="summary-name">CKA_AC_ISSUER</span> = <code title="131">131</code>
     </td>
   </tr>
@@ -2760,7 +2849,7 @@ usage bit string.</td>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="CKA_VENDOR_DEFINED"></a><span class="summary-name">CKA_VENDOR_DEFINED</span> = <code title="-2147483648">-2147483648</code>
+        <a name="CKA_VENDOR_DEFINED"></a><span class="summary-name">CKA_VENDOR_DEFINED</span> = <code title="2147483648">2147483648</code>
     </td>
   </tr>
 <tr>
@@ -7086,7 +7175,7 @@ usage bit string.</td>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="_C_API"></a><span class="summary-name">_C_API</span> = <code title="&lt;PyCObject object at 0x9d5b2c0&gt;">&lt;PyCObject object at 0x9d5b2c0&gt;</code>
+        <a name="_C_API"></a><span class="summary-name">_C_API</span> = <code title="&lt;PyCObject object at 0x2b0ee18&gt;">&lt;PyCObject object at 0x2b0ee18&gt;</code>
     </td>
   </tr>
 <tr>
@@ -7579,6 +7668,33 @@ algorithm tag is invalid.
         <li><strong class="pname"><code>algtag</code></strong> (int) - algorithm tag (e.g. SEC_OID_*)</li>
     </ul></dd>
     <dt>Returns: mechanism</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="base64_to_binary"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">base64_to_binary</span>(<span class="sig-arg">text</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Convert the base64 encoded data to binary data.</p>
+<p>The text is assumed to contain base64 text. The base64 text may
+optionally be wrapped in a PEM header and footer.</p>
+<p>Returns a SecItem containg the binary data.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>text</code></strong> (string) - string containing base64 data.</li>
+    </ul></dd>
+    <dt>Returns: SecItem</dt>
   </dl>
 </td></tr></table>
 </div>
@@ -8235,11 +8351,11 @@ to this starting level.</dd>
 <p>Generates digests of data (i.e. fingerprint) and formats
 it into line tuples for text output.</p>
   <dl class="fields">
-    <dt>Returns: <table class="rst-rst-docutils field-list rst-docutils field-list" frame="void" rules="none">
+    <dt>Returns: <table class="rst-docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="rst-rst-field rst-field"><th class="rst-rst-field-name rst-field-name">Parameters:</th><td class="rst-rst-field-body rst-field-body"></td>
+<tr class="rst-field"><th class="rst-field-name">Parameters:</th><td class="rst-field-body"></td>
 </tr>
 </tbody>
 </table></dt>
@@ -9360,11 +9476,11 @@ call to <a href="nss.nss-module.html#nss_init_context" class="link">nss_init_con
 <p>Shutdown NSS for the users of this context. When all contexts
 have been shutdown NSS will fully shutdown.</p>
   <dl class="fields">
-    <dt>Returns: <table class="rst-rst-docutils field-list rst-docutils field-list" frame="void" rules="none">
+    <dt>Returns: <table class="rst-docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="rst-rst-field rst-field"><th class="rst-rst-field-name rst-field-name">Parameters:</th><td class="rst-rst-field-body rst-field-body"></td>
+<tr class="rst-field"><th class="rst-field-name">Parameters:</th><td class="rst-field-body"></td>
 </tr>
 </tbody>
 </table></dt>
@@ -10751,7 +10867,7 @@ May be one of:</p>
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Mon May 13 10:58:12 2013
+    Generated by Epydoc 3.0.1 on Mon Oct 27 11:17:09 2014
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

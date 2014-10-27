@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="ascii"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
           "DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -342,6 +343,42 @@ within the the current NSS database.</td>
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
+          <td><span class="summary-sig"><a href="nss.nss.Certificate-class.html#set_trust_attributes" class="summary-sig-name">set_trust_attributes</a>(<span class="summary-sig-arg">...</span>)</span><br />
+      set_trust_attributes(trust, certdb, slot, [user_data1, ...])</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">['flag_name', ...]</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss.Certificate-class.html#trust_flags" class="summary-sig-name">trust_flags</a>(<span class="summary-sig-arg">flags</span>,
+        <span class="summary-sig-arg">repr_kind</span>=<span class="summary-sig-default">AsEnumDescription</span>)</span><br />
+      Given an integer with trust flags encoded as a bitmask
+return a sorted list of their values as specified in the repr_kind</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
           <td><span class="summary-sig"><a href="nss.nss.Certificate-class.html#verify" class="summary-sig-name">verify</a>(<span class="summary-sig-arg">...</span>)</span><br />
       verify(certdb, check_sig, required_usages, time, [user_data1, ...]) -&gt; valid_usages</td>
           <td align="right" valign="top">
@@ -459,6 +496,14 @@ returning True if so, False otherwise.</td>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
+        <a name="email_trust_flags"></a><span class="summary-name">email_trust_flags</span><br />
+      certificate email trust flags as integer bitmask, or None if not defined
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
         <a name="email_trust_str"></a><span class="summary-name">email_trust_str</span><br />
       certificate email trust flags as array of strings, or None if trust is not defined
     </td>
@@ -507,8 +552,24 @@ returning True if so, False otherwise.</td>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
+        <a name="signing_trust_flags"></a><span class="summary-name">signing_trust_flags</span><br />
+      certificate object signing trust flags as integer bitmask, or None if not defined
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
         <a name="signing_trust_str"></a><span class="summary-name">signing_trust_str</span><br />
       certificate object signing trust flags as array of strings, or None if trust is not defined
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="ssl_trust_flags"></a><span class="summary-name">ssl_trust_flags</span><br />
+      certificate SSL trust flags as integer bitmask, or None if not defined
     </td>
   </tr>
 <tr>
@@ -892,12 +953,12 @@ tuple.  The first item in the tuple is an integer
 representing the indentation level for that line. Any remaining items
 in the tuple are strings to be output on that line.</p>
 <p>The output of this function can be formatted into a single string by
-calling <a href="nss.nss-module.html#indented_format" class="link">indented_format()</a>, e.g.:</p>
+calling <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented_format()</a>, e.g.:</p>
 <blockquote>
 print indented_format(obj.format_lines())</blockquote>
 <p>The reason this function returns a tuple as opposed to an single
 indented string is to support other text formatting systems such as
-GUI's with indentation controls.  See <a href="nss.nss-module.html#indented_format" class="link">indented_format()</a> for a
+GUI's with indentation controls.  See <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented_format()</a> for a
 complete explanation.</p>
   <dl class="fields">
     <dt>Parameters:</dt>
@@ -1106,6 +1167,72 @@ tested for existence in the dabase until a unique name is found.</li>
 </ol>
   <dl class="fields">
     <dt>Returns: string</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_trust_attributes"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_trust_attributes</span>(<span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  set_trust_attributes(trust, certdb, slot, [user_data1, ...])
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>string</code></strong> (trust) - NSS trust string</li>
+        <li><strong class="pname"><code>certdb</code></strong> (CertDB object or None) - CertDB certificate database object, if None then the default
+certdb will be supplied by calling <a href="nss.nss-module.html#get_default_certdb" class="link">nss.get_default_certdb()</a>.</li>
+        <li><strong class="pname"><code>slot</code></strong> (<a href="nss.nss.PK11Slot-class.html" class="link">PK11Slot</a> object) - The PK11 slot to use. If None defaults to internal
+slot, see <a href="nss.nss-module.html#get_internal_key_slot" class="link">nss.get_internal_key_slot()</a></li>
+        <li><strong class="pname"><code>user_dataN</code></strong> (object) - zero or more caller supplied parameters which will
+be passed to the password callback function</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="trust_flags"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">trust_flags</span>(<span class="sig-arg">flags</span>,
+        <span class="sig-arg">repr_kind</span>=<span class="sig-default">AsEnumDescription</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Given an integer with trust flags encoded as a bitmask
+return a sorted list of their values as specified in the repr_kind</p>
+<p>This is a class method.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>flags</code></strong> (int) - certificate trust integer bitmask</li>
+        <li><p><strong class="pname"><code>repr_kind</code></strong> (RepresentationKind constant) - Specifies what the contents of the returned list will be.
+May be one of:</p>
+<dl class="rst-docutils">
+<dt>AsEnum</dt>
+<dd>The enumerated constant as an integer value.</dd>
+<dt>AsEnumName</dt>
+<dd>The name of the enumerated constant as a string.</dd>
+<dt>AsEnumDescription</dt>
+<dd>A friendly human readable description of the enumerated constant as a string.</dd>
+</dl></li>
+    </ul></dd>
+    <dt>Returns: ['flag_name', ...]</dt>
   </dl>
 </td></tr></table>
 </div>
@@ -1374,7 +1501,7 @@ be passed to the password callback function</li>
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Mon May 13 10:58:13 2013
+    Generated by Epydoc 3.0.1 on Mon Oct 27 11:17:10 2014
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

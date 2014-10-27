@@ -3,7 +3,7 @@
           "DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>nss.nss.AlgorithmID</title>
+  <title>nss.ssl.SSLChannelInfo</title>
   <link rel="stylesheet" href="epydoc.css" type="text/css" />
   <script type="text/javascript" src="epydoc.js"></script>
 </head>
@@ -38,8 +38,8 @@
     <td width="100%">
       <span class="breadcrumbs">
         <a href="nss-module.html">Package&nbsp;nss</a> ::
-        <a href="nss.nss-module.html">Module&nbsp;nss</a> ::
-        Class&nbsp;AlgorithmID
+        <a href="nss.ssl-module.html">Module&nbsp;ssl</a> ::
+        Class&nbsp;SSLChannelInfo
       </span>
     </td>
     <td>
@@ -49,22 +49,23 @@
     onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
         <tr><td align="right"><span class="options"
             >[<a href="frames.html" target="_top">frames</a
-            >]&nbsp;|&nbsp;<a href="nss.nss.AlgorithmID-class.html"
+            >]&nbsp;|&nbsp;<a href="nss.ssl.SSLChannelInfo-class.html"
             target="_top">no&nbsp;frames</a>]</span></td></tr>
       </table>
     </td>
   </tr>
 </table>
 <!-- ==================== CLASS DESCRIPTION ==================== -->
-<h1 class="epydoc">Class AlgorithmID</h1><p class="nomargin-top"></p>
+<h1 class="epydoc">Class SSLChannelInfo</h1><p class="nomargin-top"></p>
 <pre class="base-tree">
 object --+
          |
-        <strong class="uidshort">AlgorithmID</strong>
+        <strong class="uidshort">SSLChannelInfo</strong>
 </pre>
 
 <hr />
-An object representing a signature algorithm
+<p>SSLChannelInformation(obj)</p>
+<p>An object representing SSLChannelInformation.</p>
 
 <!-- ==================== INSTANCE METHODS ==================== -->
 <a name="section-InstanceMethods"></a>
@@ -89,7 +90,7 @@ An object representing a signature algorithm
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="nss.nss.AlgorithmID-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">...</span>)</span><br />
+          <td><span class="summary-sig"><a href="nss.ssl.SSLChannelInfo-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">obj</span>)</span><br />
       x.__init__(...) initializes x; see help(type(x)) for signature</td>
           <td align="right" valign="top">
             
@@ -106,7 +107,7 @@ An object representing a signature algorithm
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="nss.nss.AlgorithmID-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
+          <td><span class="summary-sig"><a href="nss.ssl.SSLChannelInfo-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
         <span class="summary-sig-arg">S</span>,
         <span class="summary-sig-arg">...</span>)</span></td>
           <td align="right" valign="top">
@@ -124,24 +125,7 @@ An object representing a signature algorithm
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="nss.nss.AlgorithmID-class.html#__repr__" class="summary-sig-name">__repr__</a>(<span class="summary-sig-arg">x</span>)</span><br />
-      repr(x)</td>
-          <td align="right" valign="top">
-            
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td><span class="summary-sig"><a href="nss.nss.AlgorithmID-class.html#__str__" class="summary-sig-name">__str__</a>(<span class="summary-sig-arg">x</span>)</span><br />
+          <td><span class="summary-sig"><a href="nss.ssl.SSLChannelInfo-class.html#__str__" class="summary-sig-name">__str__</a>(<span class="summary-sig-arg">x</span>)</span><br />
       str(x)</td>
           <td align="right" valign="top">
             
@@ -158,7 +142,7 @@ An object representing a signature algorithm
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="nss.nss.AlgorithmID-class.html#format" class="summary-sig-name">format</a>(<span class="summary-sig-arg">level</span>=<span class="summary-sig-default">0</span>,
+          <td><span class="summary-sig"><a href="nss.ssl.SSLChannelInfo-class.html#format" class="summary-sig-name">format</a>(<span class="summary-sig-arg">level</span>=<span class="summary-sig-default">0</span>,
         <span class="summary-sig-arg">indent</span>=<span class="summary-sig-default">'    '</span>)</span><br />
       This is equivalent to:
 indented_format(obj.format_lines()) on an object providing a format_lines() method.</td>
@@ -177,7 +161,7 @@ indented_format(obj.format_lines()) on an object providing a format_lines() meth
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="nss.nss.AlgorithmID-class.html#format_lines" class="summary-sig-name">format_lines</a>(<span class="summary-sig-arg">level</span>=<span class="summary-sig-default">0</span>)</span><br />
+          <td><span class="summary-sig"><a href="nss.ssl.SSLChannelInfo-class.html#format_lines" class="summary-sig-name">format_lines</a>(<span class="summary-sig-arg">level</span>=<span class="summary-sig-default">0</span>)</span><br />
       Formats the object into a sequence of lines with indent level
 information.</td>
           <td align="right" valign="top">
@@ -198,6 +182,7 @@ information.</td>
       <code>__hash__</code>,
       <code>__reduce__</code>,
       <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
       <code>__setattr__</code>,
       <code>__sizeof__</code>,
       <code>__subclasshook__</code>
@@ -226,32 +211,136 @@ information.</td>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="id_oid"></a><span class="summary-name">id_oid</span><br />
-      algorithm id OID as SecItem
+        <a name="auth_key_bits"></a><span class="summary-name">auth_key_bits</span><br />
+      Returns the auth key bits
     </td>
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="id_str"></a><span class="summary-name">id_str</span><br />
-      algorithm id as string description
+        <a name="cipher_suite"></a><span class="summary-name">cipher_suite</span><br />
+      Returns the cipher suite enum
     </td>
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a href="nss.nss.AlgorithmID-class.html#id_tag" class="summary-name">id_tag</a><br />
-      algorithm id TAG as a enumerated constant (e.g.
+        <a name="compression_method"></a><span class="summary-name">compression_method</span><br />
+      Returns the compression method enum
     </td>
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="parameters"></a><span class="summary-name">parameters</span><br />
-      algorithm parameters as SecItem
+        <a name="compression_method_name"></a><span class="summary-name">compression_method_name</span><br />
+      Returns the compression method name
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="creation_time"></a><span class="summary-name">creation_time</span><br />
+      Returns creation time as a DateTime object in local time zone
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="creation_time_utc"></a><span class="summary-name">creation_time_utc</span><br />
+      Returns creation time as a DateTime object in UTC time zone
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="expiration_time"></a><span class="summary-name">expiration_time</span><br />
+      Returns expiration time as a DateTime object in local time zone
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="expiration_time_utc"></a><span class="summary-name">expiration_time_utc</span><br />
+      Returns expiration time as a DateTime object in UTC time zone
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="kea_key_bits"></a><span class="summary-name">kea_key_bits</span><br />
+      Returns the kea key bits
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="last_access_time"></a><span class="summary-name">last_access_time</span><br />
+      Returns last access time as a DateTime object in local time zone
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="last_access_time_utc"></a><span class="summary-name">last_access_time_utc</span><br />
+      Returns last access time as a DateTime object in UTC time zone
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="major_protocol_version"></a><span class="summary-name">major_protocol_version</span><br />
+      Returns the major protocol version
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="minor_protocol_version"></a><span class="summary-name">minor_protocol_version</span><br />
+      Returns the minor protocol version
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="protocol_version"></a><span class="summary-name">protocol_version</span><br />
+      Returns the protocol version, major in octet[1], minor in octet[0]
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="protocol_version_enum"></a><span class="summary-name">protocol_version_enum</span><br />
+      Returns the protocol version as an enumerated constant
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="protocol_version_str"></a><span class="summary-name">protocol_version_str</span><br />
+      Returns the protocol version as a descriptive string
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="session_id"></a><span class="summary-name">session_id</span><br />
+      Returns the session ID as a SecItem object
     </td>
   </tr>
   <tr>
@@ -287,7 +376,7 @@ information.</td>
 <tr><td>
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">...</span>)</span>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">obj</span>)</span>
     <br /><em class="fname">(Constructor)</em>
   </h3>
   </td><td align="right" valign="top"
@@ -324,29 +413,6 @@ information.</td>
     <dt>Returns: a new object with type S, a subtype of T</dt>
     <dt>Overrides:
         object.__new__
-    </dt>
-  </dl>
-</td></tr></table>
-</div>
-<a name="__repr__"></a>
-<div>
-<table class="details" border="1" cellpadding="3"
-       cellspacing="0" width="100%" bgcolor="white">
-<tr><td>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-  <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">__repr__</span>(<span class="sig-arg">x</span>)</span>
-    <br /><em class="fname">(Representation operator)</em>
-  </h3>
-  </td><td align="right" valign="top"
-    >&nbsp;
-    </td>
-  </tr></table>
-  
-  repr(x)
-  <dl class="fields">
-    <dt>Overrides:
-        object.__repr__
     </dt>
   </dl>
 </td></tr></table>
@@ -440,36 +506,6 @@ to this starting level.</li>
 </td></tr></table>
 </div>
 <br />
-<!-- ==================== PROPERTY DETAILS ==================== -->
-<a name="section-PropertyDetails"></a>
-<table class="details" border="1" cellpadding="3"
-       cellspacing="0" width="100%" bgcolor="white">
-<tr bgcolor="#70b0f0" class="table-header">
-  <td colspan="2" class="table-header">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tr valign="top">
-        <td align="left"><span class="table-header">Property Details</span></td>
-        <td align="right" valign="top"
-         ><span class="options">[<a href="#section-PropertyDetails"
-         class="privatelink" onclick="toggle_private();"
-         >hide private</a>]</span></td>
-      </tr>
-    </table>
-  </td>
-</tr>
-</table>
-<a name="id_tag"></a>
-<div>
-<table class="details" border="1" cellpadding="3"
-       cellspacing="0" width="100%" bgcolor="white">
-<tr><td>
-  <h3 class="epydoc">id_tag</h3>
-  algorithm id TAG as a enumerated constant (e.g. tag)
-  <dl class="fields">
-  </dl>
-</td></tr></table>
-</div>
-<br />
 <!-- ==================== NAVIGATION BAR ==================== -->
 <table class="navbar" border="0" width="100%" cellpadding="0"
        bgcolor="#a0c0ff" cellspacing="0">
@@ -496,7 +532,7 @@ to this starting level.</li>
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Mon Oct 27 11:17:09 2014
+    Generated by Epydoc 3.0.1 on Mon Oct 27 11:17:10 2014
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

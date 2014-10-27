@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="ascii"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
           "DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -183,6 +184,13 @@ NSPR Error Constants:</p>
 <p>SSL_ERROR_RX_MALFORMED_HELLO_VERIFY_REQUEST: SSL received a malformed Hello Verify Request handshake message.</p>
 <p>SSL_ERROR_RX_UNEXPECTED_HELLO_VERIFY_REQUEST: SSL received an unexpected Hello Verify Request handshake message.</p>
 <p>SSL_ERROR_FEATURE_NOT_SUPPORTED_FOR_VERSION: SSL feature not supported for the protocol version.</p>
+<p>SSL_ERROR_RX_UNEXPECTED_CERT_STATUS: SSL received an unexpected Certificate Status handshake message.</p>
+<p>SSL_ERROR_UNSUPPORTED_HASH_ALGORITHM: Unsupported hash algorithm used by TLS peer.</p>
+<p>SSL_ERROR_DIGEST_FAILURE: Digest function failed.</p>
+<p>SSL_ERROR_INCORRECT_SIGNATURE_ALGORITHM: Incorrect signature algorithm specified in a digitally-signed element.</p>
+<p>SSL_ERROR_NEXT_PROTOCOL_NO_CALLBACK: The next protocol negotiation extension was enabled, but the callback was cleared prior to being needed.</p>
+<p>SSL_ERROR_NEXT_PROTOCOL_NO_PROTOCOL: The server supports no protocols that the client advertises in the ALPN extension.</p>
+<p>SSL_ERROR_INAPPROPRIATE_FALLBACK_ALERT: The server rejected the handshake because the client downgraded to a lower TLS version than the server supports.</p>
 <p>SEC_ERROR_IO: An I/O error occurred during security authorization.</p>
 <p>SEC_ERROR_LIBRARY_FAILURE: security library failure.</p>
 <p>SEC_ERROR_BAD_DATA: security library: received bad data.</p>
@@ -2406,6 +2414,13 @@ NSPR Error Constants:</p>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
+        <a name="SSL_ERROR_DIGEST_FAILURE"></a><span class="summary-name">SSL_ERROR_DIGEST_FAILURE</span> = <code title="-12161">-12161</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
         <a name="SSL_ERROR_ENCRYPTION_FAILURE"></a><span class="summary-name">SSL_ERROR_ENCRYPTION_FAILURE</span> = <code title="-12218">-12218</code>
     </td>
   </tr>
@@ -2511,6 +2526,20 @@ NSPR Error Constants:</p>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
+        <a name="SSL_ERROR_INAPPROPRIATE_FALLBACK_ALERT"></a><span class="summary-name">SSL_ERROR_INAPPROPRIATE_FALLBACK_ALERT</span> = <code title="-12157">-12157</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SSL_ERROR_INCORRECT_SIGNATURE_ALGORITHM"></a><span class="summary-name">SSL_ERROR_INCORRECT_SIGNATURE_ALGORITHM</span> = <code title="-12160">-12160</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
         <a name="SSL_ERROR_INIT_CIPHER_SUITE_FAILURE"></a><span class="summary-name">SSL_ERROR_INIT_CIPHER_SUITE_FAILURE</span> = <code title="-12208">-12208</code>
     </td>
   </tr>
@@ -2561,6 +2590,20 @@ NSPR Error Constants:</p>
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
         <a name="SSL_ERROR_NEXT_PROTOCOL_DATA_INVALID"></a><span class="summary-name">SSL_ERROR_NEXT_PROTOCOL_DATA_INVALID</span> = <code title="-12172">-12172</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SSL_ERROR_NEXT_PROTOCOL_NO_CALLBACK"></a><span class="summary-name">SSL_ERROR_NEXT_PROTOCOL_NO_CALLBACK</span> = <code title="-12159">-12159</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SSL_ERROR_NEXT_PROTOCOL_NO_PROTOCOL"></a><span class="summary-name">SSL_ERROR_NEXT_PROTOCOL_NO_PROTOCOL</span> = <code title="-12158">-12158</code>
     </td>
   </tr>
 <tr>
@@ -2799,6 +2842,13 @@ NSPR Error Constants:</p>
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
         <a name="SSL_ERROR_RX_UNEXPECTED_CERT_REQUEST"></a><span class="summary-name">SSL_ERROR_RX_UNEXPECTED_CERT_REQUEST</span> = <code title="-12242">-12242</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SSL_ERROR_RX_UNEXPECTED_CERT_STATUS"></a><span class="summary-name">SSL_ERROR_RX_UNEXPECTED_CERT_STATUS</span> = <code title="-12163">-12163</code>
     </td>
   </tr>
 <tr>
@@ -3064,6 +3114,13 @@ NSPR Error Constants:</p>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
+        <a name="SSL_ERROR_UNSUPPORTED_HASH_ALGORITHM"></a><span class="summary-name">SSL_ERROR_UNSUPPORTED_HASH_ALGORITHM</span> = <code title="-12162">-12162</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
         <a name="SSL_ERROR_UNSUPPORTED_VERSION"></a><span class="summary-name">SSL_ERROR_UNSUPPORTED_VERSION</span> = <code title="-12279">-12279</code>
     </td>
   </tr>
@@ -3197,7 +3254,7 @@ NSPR Error Constants:</p>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="_C_API"></a><span class="summary-name">_C_API</span> = <code title="&lt;PyCObject object at 0x9d5b1b8&gt;">&lt;PyCObject object at 0x9d5b1b8&gt;</code>
+        <a name="_C_API"></a><span class="summary-name">_C_API</span> = <code title="&lt;PyCObject object at 0x2b0eaa8&gt;">&lt;PyCObject object at 0x2b0eaa8&gt;</code>
     </td>
   </tr>
 <tr>
@@ -3234,7 +3291,7 @@ NSPR Error Constants:</p>
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Mon May 13 10:58:11 2013
+    Generated by Epydoc 3.0.1 on Mon Oct 27 11:17:09 2014
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
