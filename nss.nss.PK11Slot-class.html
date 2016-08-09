@@ -55,8 +55,8 @@
     </td>
   </tr>
 </table>
-<!-- ==================== CLASS DESCRIPTION ==================== -->
-<h1 class="epydoc">Class PK11Slot</h1><p class="nomargin-top"></p>
+<!-- ==================== TYPE DESCRIPTION ==================== -->
+<h1 class="epydoc">type PK11Slot</h1><p class="nomargin-top"></p>
 <pre class="base-tree">
 object --+
          |
@@ -120,6 +120,23 @@ An object representing a PKCS #11 Slot
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss.PK11Slot-class.html#__str__" class="summary-sig-name">__str__</a>(<span class="summary-sig-arg">x</span>)</span><br />
+      str(x)</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type"><table class="rst-docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -135,6 +152,95 @@ An object representing a PKCS #11 Slot
         <span class="summary-sig-arg">user_data1</span>=<span class="summary-sig-default">...</span>,
         <span class="summary-sig-arg">...</span>)</span><br />
       If True load certificates after authenticating.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss.PK11Slot-class.html#change_passwd" class="summary-sig-name">change_passwd</a>(<span class="summary-sig-arg">old_passwd</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">new_passwd</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Change the user password on the token.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss.PK11Slot-class.html#check_security_officer_passwd" class="summary-sig-name">check_security_officer_passwd</a>(<span class="summary-sig-arg">security_officer_passwd</span>)</span><br />
+      Verify security officer password.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss.PK11Slot-class.html#check_user_passwd" class="summary-sig-name">check_user_passwd</a>(<span class="summary-sig-arg">user_passwd</span>)</span><br />
+      Verify security officer password.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">string)</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss.PK11Slot-class.html#format" class="summary-sig-name">format</a>(<span class="summary-sig-arg">level</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">indent</span>=<span class="summary-sig-default">'    '</span>)</span><br />
+      This is equivalent to:
+indented_format(obj.format_lines()) on an object providing a format_lines() method.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">[(level, string),...]</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss.PK11Slot-class.html#format_lines" class="summary-sig-name">format_lines</a>(<span class="summary-sig-arg">level</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Formats the object into a sequence of lines with indent level
+information.</td>
           <td align="right" valign="top">
             
             
@@ -239,6 +345,24 @@ library, False otherwise.</td>
         <tr>
           <td><span class="summary-sig"><a name="has_root_certs"></a><span class="summary-sig-name">has_root_certs</span>()</span><br />
       Returns True if the slot contains the root certificate , False otherwise.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss.PK11Slot-class.html#init_pin" class="summary-sig-name">init_pin</a>(<span class="summary-sig-arg">security_officer_passwd</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">user_passwd</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Initialize the token's pin for first use.</td>
           <td align="right" valign="top">
             
             
@@ -479,6 +603,23 @@ the user by providing their pin, False otherwise.</td>
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
+          <td><span class="summary-sig"><a href="nss.nss.PK11Slot-class.html#pbe_key_gen" class="summary-sig-name">pbe_key_gen</a>(<span class="summary-sig-arg">...</span>)</span><br />
+      pbe_key_gen(algid, password, [user_data1, ...]) -&gt; PK11SymKey object</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
           <td><span class="summary-sig"><a href="nss.nss.PK11Slot-class.html#user_disable" class="summary-sig-name">user_disable</a>()</span><br />
       Prevents the slot from being used, and sets disable reason to
 PK11_DIS_USER_SELECTED.</td>
@@ -498,7 +639,7 @@ PK11_DIS_USER_SELECTED.</td>
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a href="nss.nss.PK11Slot-class.html#user_enable" class="summary-sig-name">user_enable</a>()</span><br />
-      Allow all mechanisms that are ON before <a href="nss.nss.PK11Slot-class.html#user_disable" class="link">PK11Slot.user_disable()</a> was
+      Allow all mechanisms that are ON before <a href="nss.nss.PK11Slot-class.html#user_disable" class="link">PK11Slot.user\_disable()</a> was
 called to be available again.</td>
           <td align="right" valign="top">
             
@@ -507,23 +648,6 @@ called to be available again.</td>
         </tr>
       </table>
       
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" class="summary">
-    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
-      <code>__delattr__</code>,
-      <code>__format__</code>,
-      <code>__getattribute__</code>,
-      <code>__hash__</code>,
-      <code>__reduce__</code>,
-      <code>__reduce_ex__</code>,
-      <code>__repr__</code>,
-      <code>__setattr__</code>,
-      <code>__sizeof__</code>,
-      <code>__str__</code>,
-      <code>__subclasshook__</code>
-      </p>
     </td>
   </tr>
 </table>
@@ -558,13 +682,6 @@ called to be available again.</td>
     </td><td class="summary">
         <a name="token_name"></a><span class="summary-name">token_name</span><br />
       token name
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" class="summary">
-    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
-      <code>__class__</code>
-      </p>
     </td>
   </tr>
 </table>
@@ -634,6 +751,29 @@ called to be available again.</td>
   </dl>
 </td></tr></table>
 </div>
+<a name="__str__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__str__</span>(<span class="sig-arg">x</span>)</span>
+    <br /><em class="fname">(Informal representation operator)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  str(x)
+  <dl class="fields">
+    <dt>Overrides:
+        object.__str__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
 <a name="authenticate"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
@@ -657,7 +797,7 @@ called to be available again.</td>
 </dl>
 </blockquote>
 <p>Checks to see if token needs to be logged in.  If so it invokes the
-password callback (set via <a href="nss.nss-module.html#set_password_callback" class="link">nss.set_password_callback()</a>) passing the
+password callback (set via <a href="nss.nss-module.html#set_password_callback" class="link">nss.set\_password\_callback()</a>) passing the
 optional user_data parameters to the password callback.</p>
   <dl class="fields">
     <dt>Returns: <table class="rst-docutils field-list" frame="void" rules="none">
@@ -668,6 +808,143 @@ optional user_data parameters to the password callback.</p>
 </tr>
 </tbody>
 </table></dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="change_passwd"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">change_passwd</span>(<span class="sig-arg">old_passwd</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">new_passwd</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  Change the user password on the token.
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>old_passwd</code></strong> (string or None) - Previouis password.</li>
+        <li><strong class="pname"><code>new_passwd</code></strong> (string or None) - New password.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="check_security_officer_passwd"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">check_security_officer_passwd</span>(<span class="sig-arg">security_officer_passwd</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  Verify security officer password.
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>security_officer_passwd</code></strong> (string) - Security Officer password.</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="check_user_passwd"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">check_user_passwd</span>(<span class="sig-arg">user_passwd</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  Verify security officer password.
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>user_passwd</code></strong> (string) - user password.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="format"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">format</span>(<span class="sig-arg">level</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">indent</span>=<span class="sig-default">'    '</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  This is equivalent to:
+indented_format(obj.format_lines()) on an object providing a format_lines() method.
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>level</code></strong> (integer) - Initial indentation level, all subsequent indents are relative
+to this starting level.</li>
+        <li><strong class="pname"><code>indent</code></strong> (string) - string replicated once for each indent level then prepended to output line</li>
+    </ul></dd>
+    <dt>Returns: string)</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="format_lines"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">format_lines</span>(<span class="sig-arg">level</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Formats the object into a sequence of lines with indent level
+information.  The return value is a list where each list item is a
+tuple.  The first item in the tuple is an integer
+representing the indentation level for that line. Any remaining items
+in the tuple are strings to be output on that line.</p>
+<p>The output of this function can be formatted into a single string by
+calling <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented\_format()</a>, e.g.:</p>
+<blockquote>
+print indented_format(obj.format_lines())</blockquote>
+<p>The reason this function returns a tuple as opposed to an single
+indented string is to support other text formatting systems such as
+GUI's with indentation controls.  See <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented\_format()</a> for a
+complete explanation.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>level</code></strong> (integer) - Initial indentation level, all subsequent indents are relative
+to this starting level.</li>
+    </ul></dd>
+    <dt>Returns: [(level, string),...]</dt>
   </dl>
 </td></tr></table>
 </div>
@@ -796,6 +1073,31 @@ integrated key pad.
   </dl>
 </td></tr></table>
 </div>
+<a name="init_pin"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">init_pin</span>(<span class="sig-arg">security_officer_passwd</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">user_passwd</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  Initialize the token's pin for first use.
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>security_officer_passwd</code></strong> (string or None) - Security Officer password used to unlock token.</li>
+        <li><strong class="pname"><code>user_passwd</code></strong> (string or None) - User password to set as token pin.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
 <a name="is_logged_in"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
@@ -871,6 +1173,33 @@ allocated on their behalf.</p>
   </dl>
 </td></tr></table>
 </div>
+<a name="pbe_key_gen"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">pbe_key_gen</span>(<span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>pbe_key_gen(algid, password, [user_data1, ...]) -&gt; PK11SymKey object</p>
+<p>Generate a PBE symmetric key.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>algid</code></strong> (AlgorithmID object) - algorithm id</li>
+        <li><strong class="pname"><code>password</code></strong> (string) - the password used to create the PBE Key</li>
+        <li><strong class="pname"><code>user_dataN</code></strong> (object ...) - zero or more caller supplied parameters which will
+be passed to the password callback function</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
 <a name="user_disable"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
@@ -888,7 +1217,7 @@ allocated on their behalf.</p>
   <p>Prevents the slot from being used, and sets disable reason to
 PK11_DIS_USER_SELECTED.</p>
 <p>Mechanisms that were on continue to stay on. Therefore, when the slot
-is enabled again via <a href="nss.nss.PK11Slot-class.html#user_enable" class="link">PK11Slot.user_enable()</a>, it will remember what
+is enabled again via <a href="nss.nss.PK11Slot-class.html#user_enable" class="link">PK11Slot.user\_enable()</a>, it will remember what
 mechanisms needs to be turned on.</p>
   <dl class="fields">
   </dl>
@@ -908,7 +1237,7 @@ mechanisms needs to be turned on.</p>
     </td>
   </tr></table>
   
-  Allow all mechanisms that are ON before <a href="nss.nss.PK11Slot-class.html#user_disable" class="link">PK11Slot.user_disable()</a> was
+  Allow all mechanisms that are ON before <a href="nss.nss.PK11Slot-class.html#user_disable" class="link">PK11Slot.user\_disable()</a> was
 called to be available again. Sets disable reason to PK11_DIS_NONE.
   <dl class="fields">
   </dl>
@@ -941,7 +1270,7 @@ called to be available again. Sets disable reason to PK11_DIS_NONE.
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Mon Oct 27 11:17:10 2014
+    Generated by Epydoc 3.0.1
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

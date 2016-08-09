@@ -55,8 +55,8 @@
     </td>
   </tr>
 </table>
-<!-- ==================== CLASS DESCRIPTION ==================== -->
-<h1 class="epydoc">Class SecItem</h1><p class="nomargin-top"></p>
+<!-- ==================== TYPE DESCRIPTION ==================== -->
+<h1 class="epydoc">type SecItem</h1><p class="nomargin-top"></p>
 <pre class="base-tree">
 object --+
          |
@@ -64,8 +64,19 @@ object --+
 </pre>
 
 <hr />
-<p>SecItem(data=None, type=siBuffer)</p>
-<p>Encoded data. Used internally by NSS</p>
+<p>SecItem(data=None, type=siBuffer, ascii=False)</p>
+<p>A SecItem is a block of binary data. It contains the data, a count of
+the number of octets in the data and optionally a type describing the
+contents of the data. SecItem's are used throughout NSS to pass blocks
+of binary data back and forth. Because the binary data is often DER
+(Distinguished Encoding Rule) ASN.1 data the data is often referred to
+as 'der'.</p>
+<p>SecItem's are often returned by NSS functions.</p>
+<p>You can create and initialize a SecItem yourself by passing the data
+to the SecItem constructor. If you do initialize the data you may either
+pass binary data or text (when ascii == True). When you pass ascii data
+it will be interpreted as base64 encoded binary data. The base64 text may
+optionally be wrapped inside PEM delimiters, but PEM format is not required.</p>
 
 <!-- ==================== INSTANCE METHODS ==================== -->
 <a name="section-InstanceMethods"></a>
@@ -90,9 +101,27 @@ object --+
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a name="__cmp__"></a><span class="summary-sig-name">__cmp__</span>(<span class="summary-sig-arg">x</span>,
+          <td><span class="summary-sig"><a name="__eq__"></a><span class="summary-sig-name">__eq__</span>(<span class="summary-sig-arg">x</span>,
         <span class="summary-sig-arg">y</span>)</span><br />
-      cmp(x,y)</td>
+      x==y</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__ge__"></a><span class="summary-sig-name">__ge__</span>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>)</span><br />
+      x&gt;=y</td>
           <td align="right" valign="top">
             
             
@@ -145,9 +174,46 @@ object --+
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
+          <td><span class="summary-sig"><a name="__gt__"></a><span class="summary-sig-name">__gt__</span>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>)</span><br />
+      x&gt;y</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
           <td><span class="summary-sig"><a href="nss.nss.SecItem-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">data</span>=<span class="summary-sig-default">None</span>,
-        <span class="summary-sig-arg">type</span>=<span class="summary-sig-default">siBuffer</span>)</span><br />
+        <span class="summary-sig-arg">type</span>=<span class="summary-sig-default">siBuffer</span>,
+        <span class="summary-sig-arg">ascii</span>=<span class="summary-sig-default">False</span>)</span><br />
       x.__init__(...) initializes x; see help(type(x)) for signature</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__le__"></a><span class="summary-sig-name">__le__</span>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>)</span><br />
+      x&lt;=y</td>
           <td align="right" valign="top">
             
             
@@ -176,13 +242,13 @@ object --+
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">a new object with type S, a subtype of T</span>
+      <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="nss.nss.SecItem-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
-        <span class="summary-sig-arg">S</span>,
-        <span class="summary-sig-arg">...</span>)</span></td>
+          <td><span class="summary-sig"><a name="__lt__"></a><span class="summary-sig-name">__lt__</span>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>)</span><br />
+      x&lt;y</td>
           <td align="right" valign="top">
             
             
@@ -198,8 +264,27 @@ object --+
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="nss.nss.SecItem-class.html#__repr__" class="summary-sig-name">__repr__</a>(<span class="summary-sig-arg">x</span>)</span><br />
-      repr(x)</td>
+          <td><span class="summary-sig"><a name="__ne__"></a><span class="summary-sig-name">__ne__</span>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>)</span><br />
+      x!=y</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">a new object with type S, a subtype of T</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss.SecItem-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">...</span>)</span></td>
           <td align="right" valign="top">
             
             
@@ -236,6 +321,43 @@ object --+
         <span class="summary-sig-arg">separator</span>=<span class="summary-sig-default">':'</span>)</span><br />
       Interpret the SecItem as containing DER encoded data consisting
 of a &lt;type,length,value&gt; triplet (e.g.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">string)</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss.SecItem-class.html#format" class="summary-sig-name">format</a>(<span class="summary-sig-arg">level</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">indent</span>=<span class="summary-sig-default">'    '</span>)</span><br />
+      This is equivalent to:
+indented_format(obj.format_lines()) on an object providing a format_lines() method.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">[(level, string),...]</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss.SecItem-class.html#format_lines" class="summary-sig-name">format_lines</a>(<span class="summary-sig-arg">level</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Formats the object into a sequence of lines with indent level
+information.</td>
           <td align="right" valign="top">
             
             
@@ -286,6 +408,24 @@ a Python integer (or long)</td>
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
+          <td><span class="summary-sig"><a href="nss.nss.SecItem-class.html#to_base64" class="summary-sig-name">to_base64</a>(<span class="summary-sig-arg">chars_per_line</span>=<span class="summary-sig-default">64</span>,
+        <span class="summary-sig-arg">pem_type</span>=<span class="summary-sig-default"></span>)</span><br />
+      Format the binary data in the SecItem as base64 string(s).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">string or list of strings</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
           <td><span class="summary-sig"><a href="nss.nss.SecItem-class.html#to_hex" class="summary-sig-name">to_hex</a>(<span class="summary-sig-arg">octets_per_line</span>=<span class="summary-sig-default">0</span>,
         <span class="summary-sig-arg">separator</span>=<span class="summary-sig-default">':'</span>)</span><br />
       Equivalent to calling data_to_hex(sec_item)</td>
@@ -296,21 +436,6 @@ a Python integer (or long)</td>
         </tr>
       </table>
       
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" class="summary">
-    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
-      <code>__delattr__</code>,
-      <code>__format__</code>,
-      <code>__getattribute__</code>,
-      <code>__hash__</code>,
-      <code>__reduce__</code>,
-      <code>__reduce_ex__</code>,
-      <code>__setattr__</code>,
-      <code>__sizeof__</code>,
-      <code>__subclasshook__</code>
-      </p>
     </td>
   </tr>
 </table>
@@ -353,13 +478,6 @@ a Python integer (or long)</td>
     </td><td class="summary">
         <a name="type"></a><span class="summary-name">type</span><br />
       the SecItem type (si* constant)
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" class="summary">
-    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
-      <code>__class__</code>
-      </p>
     </td>
   </tr>
 </table>
@@ -412,7 +530,8 @@ a Python integer (or long)</td>
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr valign="top"><td>
   <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">data</span>=<span class="sig-default">None</span>,
-        <span class="sig-arg">type</span>=<span class="sig-default">siBuffer</span>)</span>
+        <span class="sig-arg">type</span>=<span class="sig-default">siBuffer</span>,
+        <span class="sig-arg">ascii</span>=<span class="sig-default">False</span>)</span>
     <br /><em class="fname">(Constructor)</em>
   </h3>
   </td><td align="right" valign="top"
@@ -426,6 +545,9 @@ a Python integer (or long)</td>
     <dd><ul class="nomargin-top">
         <li><strong class="pname"><code>data</code></strong> (any read buffer compatible object (e.g. buffer or string)) - raw data to initialize from</li>
         <li><strong class="pname"><code>type</code></strong> (int) - SECItemType constant (e.g. si*)</li>
+        <li><strong class="pname"><code>ascii</code></strong> (bool) - If true then data is interpretted as base64 encoded.
+A PEM header and footer is permissible, if present the
+base64 data will be found inside the PEM delimiters.</li>
     </ul></dd>
     <dt>Overrides:
         object.__init__
@@ -454,29 +576,6 @@ a Python integer (or long)</td>
     <dt>Returns: a new object with type S, a subtype of T</dt>
     <dt>Overrides:
         object.__new__
-    </dt>
-  </dl>
-</td></tr></table>
-</div>
-<a name="__repr__"></a>
-<div>
-<table class="details" border="1" cellpadding="3"
-       cellspacing="0" width="100%" bgcolor="white">
-<tr><td>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-  <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">__repr__</span>(<span class="sig-arg">x</span>)</span>
-    <br /><em class="fname">(Representation operator)</em>
-  </h3>
-  </td><td align="right" valign="top"
-    >&nbsp;
-    </td>
-  </tr></table>
-  
-  repr(x)
-  <dl class="fields">
-    <dt>Overrides:
-        object.__repr__
     </dt>
   </dl>
 </td></tr></table>
@@ -538,6 +637,71 @@ passed and no separator will be used.</li>
   </dl>
 </td></tr></table>
 </div>
+<a name="format"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">format</span>(<span class="sig-arg">level</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">indent</span>=<span class="sig-default">'    '</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  This is equivalent to:
+indented_format(obj.format_lines()) on an object providing a format_lines() method.
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>level</code></strong> (integer) - Initial indentation level, all subsequent indents are relative
+to this starting level.</li>
+        <li><strong class="pname"><code>indent</code></strong> (string) - string replicated once for each indent level then prepended to output line</li>
+    </ul></dd>
+    <dt>Returns: string)</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="format_lines"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">format_lines</span>(<span class="sig-arg">level</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Formats the object into a sequence of lines with indent level
+information.  The return value is a list where each list item is a
+tuple.  The first item in the tuple is an integer
+representing the indentation level for that line. Any remaining items
+in the tuple are strings to be output on that line.</p>
+<p>The output of this function can be formatted into a single string by
+calling <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented\_format()</a>, e.g.:</p>
+<blockquote>
+print indented_format(obj.format_lines())</blockquote>
+<p>The reason this function returns a tuple as opposed to an single
+indented string is to support other text formatting systems such as
+GUI's with indentation controls.  See <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented\_format()</a> for a
+complete explanation.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>level</code></strong> (integer) - Initial indentation level, all subsequent indents are relative
+to this starting level.</li>
+    </ul></dd>
+    <dt>Returns: [(level, string),...]</dt>
+  </dl>
+</td></tr></table>
+</div>
 <a name="get_oid_sequence"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
@@ -574,6 +738,86 @@ the OID in DER format.</dd>
 </dl></li>
     </ul></dd>
     <dt>Returns: (obj, ...)</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="to_base64"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">to_base64</span>(<span class="sig-arg">chars_per_line</span>=<span class="sig-default">64</span>,
+        <span class="sig-arg">pem_type</span>=<span class="sig-default"></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Format the binary data in the SecItem as base64 string(s).
+Either a list of strings is returned or a single string.</p>
+<p>If chars_per_line is greater than zero then a list of
+strings will be returned where each string contains
+chars_per_line number of characters (except for the last
+string in the list which will contain the remainder of the
+characters). Returning a list of &quot;lines&quot; makes it convenient
+for a caller to format a block of base64 data with line
+wrapping. If chars_per_line is greater than zero indicating
+a list result is desired a list is always returned even if
+the number of characters would produce only a single line.</p>
+<p>If chars_per_line is zero then a single string is returned,
+(no line splitting is performed).</p>
+<p>Examples:</p>
+<p>If data is:</p>
+<pre class="rst-literal-block">
+c8:94:00:9f:c2:8d:a2:5a:61:92:f2:cd:39:75:73:f4
+</pre>
+<p>data.to_hex(0) will return the single string:</p>
+<pre class="rst-literal-block">
+'yJQAn8KNolphkvLNOXVz9A=='
+</pre>
+<p>data.to_hex(5) will return a list of strings where each string has
+a length of 5 (except the last string which may be shorter):</p>
+<pre class="rst-literal-block">
+[
+     'yJQAn',
+     '8KNol',
+     'phkvL',
+     'NOXVz',
+     '9A=='
+]
+</pre>
+<p>If you specify the pem_type optional parameter the return value
+will be a list of strings whose first and last strings will be a
+PEM header and footer. For example if pem_type='CERTIFICATE'
+then the return value will be like this:</p>
+<pre class="rst-literal-block">
+[
+    '-----BEGIN CERTIFICATE-----',
+    'yJQAn8KNolphkvLNOXVz9A=='
+    '-----END CERTIFICATE-----'
+]
+</pre>
+<p>When a list of strings is returned it is easy to form a single
+text block using the line ending of your choice, for example:</p>
+<pre class="rst-literal-block">
+'\n'.join(data.to_base64())
+</pre>
+<p>Thus a PEM block can be formed like this:</p>
+<pre class="rst-literal-block">
+'\n'.join(data.to_base64(pem_type='CERTIFICATE'))
+</pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>chars_per_line</code></strong> (integer) - Number of characters formatted on one line, if 0 then
+return a single string instead of an array of lines</li>
+        <li><strong class="pname"><code>pem_type</code></strong> (string) - If supplied the base64 encoded data will be wrapped with
+a PEM header and footer whose type is the string.</li>
+    </ul></dd>
+    <dt>Returns: string or list of strings</dt>
   </dl>
 </td></tr></table>
 </div>
@@ -633,7 +877,7 @@ passed and no separator will be used.</li>
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Mon Oct 27 11:17:10 2014
+    Generated by Epydoc 3.0.1
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

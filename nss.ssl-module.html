@@ -60,8 +60,8 @@
 <div class="rst-section" id="rst-ssl-version-range-api">
 <h1 class="heading">SSL Version Range API</h1>
 <p>This API should be used to control SSL 3.0 &amp; TLS support instead of
-the older <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set_ssl_option()</a> API; however,
-<a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set_ssl_option()</a> API MUST still be used to control SSL 2.0
+the older <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set\_ssl\_option()</a> API; however,
+<a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set\_ssl\_option()</a> API MUST still be used to control SSL 2.0
 support. In this version of libssl, SSL 3.0 and TLS 1.0 are enabled by
 default. Future versions of libssl may change which versions of the
 protocol are enabled by default.</p>
@@ -70,7 +70,7 @@ indicates whether the protocol is of type stream or datagram. This
 must be provided to the functions that do not take an fd. Functions
 which take an fd will get the variant from the fd.</p>
 <p>Using the new version range API in conjunction with the older
-<a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set_ssl_option()</a> API for controlling the enabled protocol
+<a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set\_ssl\_option()</a> API for controlling the enabled protocol
 versions may cause unexpected results. Going forward, we guarantee
 only the following:</p>
 <p><tt class="rst-docutils literal">SSLSocket.get_ssl_option(ssl.SSL_ENABLE_TLS)</tt> will return True if
@@ -78,7 +78,7 @@ only the following:</p>
 <p><tt class="rst-docutils literal">SSLSocket.set_ssl_option(ssl.SSL_ENABLE_TLS, False)</tt> will disable
 <em>ALL</em> versions of TLS, including TLS 1.0 and later.</p>
 <p>The above two properties provide compatibility for applications that
-use <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set_ssl_option()</a> to implement the insecure fallback
+use <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set\_ssl\_option()</a> to implement the insecure fallback
 from TLS 1.x to SSL 3.0.</p>
 <p><tt class="rst-docutils literal">SSLSocket.set_ssl_option(ssl.SSL_ENABLE_TLS, True)</tt> will enable TLS
 1.0, and may also enable some later versions of TLS, if it is
@@ -116,25 +116,19 @@ to keep the set of enabled versions contiguous.</p>
   </td>
 </tr>
 <tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
+    <td class="summary" colspan="2">
         <a href="nss.ssl.SSLChannelInfo-class.html" class="summary-name">SSLChannelInfo</a><br />
       SSLChannelInformation(obj)
     </td>
   </tr>
 <tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
+    <td class="summary" colspan="2">
         <a href="nss.ssl.SSLCipherSuiteInfo-class.html" class="summary-name">SSLCipherSuiteInfo</a><br />
       SSLCipherSuiteInformation(obj)
     </td>
   </tr>
 <tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
+    <td class="summary" colspan="2">
         <a href="nss.ssl.SSLSocket-class.html" class="summary-name">SSLSocket</a><br />
       SSLSocket(family=PR_AF_INET, type=PR_DESC_SOCKET_TCP)
     </td>
@@ -1990,7 +1984,7 @@ return it's according to repr_kind</td>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="_C_API"></a><span class="summary-name">_C_API</span> = <code title="&lt;PyCObject object at 0x2b0efd0&gt;">&lt;PyCObject object at 0x2b0efd0&gt;</code>
+        <a name="_C_API"></a><span class="summary-name">_C_API</span> = <code title="&lt;capsule object &quot;_C_API&quot; at 0x7fc5432a5b40&gt;">&lt;capsule object &quot;_C_API&quot; at 0x7fc5432a5b40&gt;</code>
     </td>
   </tr>
 <tr>
@@ -2018,15 +2012,15 @@ return it's according to repr_kind</td>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a href="nss.ssl-module.html#ssl_implemented_ciphers" class="summary-name">ssl_implemented_ciphers</a> = <code title="(49195,
+        <a href="nss.ssl-module.html#ssl_implemented_ciphers" class="summary-name">ssl_implemented_ciphers</a> = <code title="(53249,
+ 52396,
+ 53250,
+ 170,
+ 52397,
+ 171,
+ 49195,
  49199,
- 49162,
- 49161,
- 49171,
- 49187,
- 49191,
- 49172,
-..."><code class="variable-group">(</code>49195<code class="variable-op">, </code>49199<code class="variable-op">, </code>49162<code class="variable-op">, </code>49161<code class="variable-op">, </code>49171<code class="variable-op">, </code><code class="variable-ellipsis">...</code></code>
+..."><code class="variable-group">(</code>53249<code class="variable-op">, </code>52396<code class="variable-op">, </code>53250<code class="variable-op">, </code>170<code class="variable-op">, </code>52397<code class="variable-op">, </code>17<code class="variable-ellipsis">...</code></code>
     </td>
   </tr>
 <tr>
@@ -2120,11 +2114,11 @@ in RAM (not on disk).
   
   <p>This function sets up a Server Session ID (SID) cache that is safe for
 access by multiple processes on the same system.</p>
-<p>Like <a href="nss.ssl-module.html#config_server_session_id_cache" class="link">ssl.config_server_session_id_cache()</a>, with one important
+<p>Like <a href="nss.ssl-module.html#config_server_session_id_cache" class="link">ssl.config\_server\_session\_id\_cache()</a>, with one important
 difference.  If the application will run multiple processes (as
 opposed to, or in addition to multiple threads), then it must call
 this function, instead of calling
-<a href="nss.ssl-module.html#config_server_session_id_cache" class="link">ssl.config_server_session_id_cache()</a>.  This has nothing to do with
+<a href="nss.ssl-module.html#config_server_session_id_cache" class="link">ssl.config\_server\_session\_id\_cache()</a>.  This has nothing to do with
 the number of processors, only processes.</p>
   <dl class="fields">
     <dt>Parameters:</dt>
@@ -2165,7 +2159,7 @@ used (/tmp (Unix) or temp (NT)).</li>
 handshake as a server, you must call config_server_session_id_cache()
 to configure the session caches for server sessions.</p>
 <p>If your server application uses multiple processes (instead of or in
-addition to multiple threads), use <a href="nss.ssl-module.html#config_mp_server_sid_cache" class="link">ssl.config_mp_server_sid_cache()</a>
+addition to multiple threads), use <a href="nss.ssl-module.html#config_mp_server_sid_cache" class="link">ssl.config\_mp\_server\_sid\_cache()</a>
 instead.  You must use one of these functions to create a server
 cache.</p>
 <p>This function creates two caches: the server session ID cache (also
@@ -2393,7 +2387,7 @@ cache initialization functions.
   
   Gets the default value of a specified SSL option for all
 subsequently opened sockets as long as the current application program
-is running. Refer to the documentation for <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set_ssl_option()</a>
+is running. Refer to the documentation for <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set\_ssl\_option()</a>
 for an explanation of the possible values.
   <dl class="fields">
   </dl>
@@ -2566,9 +2560,9 @@ protocol variant.
     <dt>Parameters:</dt>
     <dd><ul class="nomargin-top">
         <li><strong class="pname"><code>min_version</code></strong> (int or string) - Either a SSL_LIBRARY_VERSION_* enumerated constant or it's
-string equivalent, see <a href="nss.ssl-module.html#ssl_library_version_from_name" class="link">ssl_library_version_from_name()</a></li>
+string equivalent, see <a href="nss.ssl-module.html#ssl_library_version_from_name" class="link">ssl\_library\_version\_from\_name()</a></li>
         <li><strong class="pname"><code>max_version</code></strong> (int or string) - Either a SSL_LIBRARY_VERSION_* enumerated constant or it's
-string equivalent, see <a href="nss.ssl-module.html#ssl_library_version_from_name" class="link">ssl_library_version_from_name()</a></li>
+string equivalent, see <a href="nss.ssl-module.html#ssl_library_version_from_name" class="link">ssl\_library\_version\_from\_name()</a></li>
         <li><strong class="pname"><code>protocol_variant</code></strong> (int) - One of: SSL_VARIANT_STREAM or SSL_VARIANT_DATAGRAM
 enumerated constants</li>
     </ul></dd>
@@ -2663,7 +2657,7 @@ will not be changed.
   
   Changes the default value of a specified SSL option for all
 subsequently opened sockets as long as the current application program
-is running. Refer to the documentation for <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set_ssl_option()</a>
+is running. Refer to the documentation for <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set\_ssl\_option()</a>
 for an explanation of the possible values.
   <dl class="fields">
   </dl>
@@ -2846,14 +2840,14 @@ May be one of:</p>
   <dl class="fields">
     <dt>Value:</dt>
       <dd><table><tr><td><pre class="variable">
-<code class="variable-group">(</code>49195<code class="variable-op">,</code>
+<code class="variable-group">(</code>53249<code class="variable-op">,</code>
+ 52396<code class="variable-op">,</code>
+ 53250<code class="variable-op">,</code>
+ 170<code class="variable-op">,</code>
+ 52397<code class="variable-op">,</code>
+ 171<code class="variable-op">,</code>
+ 49195<code class="variable-op">,</code>
  49199<code class="variable-op">,</code>
- 49162<code class="variable-op">,</code>
- 49161<code class="variable-op">,</code>
- 49171<code class="variable-op">,</code>
- 49187<code class="variable-op">,</code>
- 49191<code class="variable-op">,</code>
- 49172<code class="variable-op">,</code>
 <code class="variable-ellipsis">...</code>
 </pre></td></tr></table>
 </dd>
@@ -2887,7 +2881,7 @@ May be one of:</p>
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Mon Oct 27 11:17:09 2014
+    Generated by Epydoc 3.0.1
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

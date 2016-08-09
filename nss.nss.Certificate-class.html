@@ -55,8 +55,8 @@
     </td>
   </tr>
 </table>
-<!-- ==================== CLASS DESCRIPTION ==================== -->
-<h1 class="epydoc">Class Certificate</h1><p class="nomargin-top"></p>
+<!-- ==================== TYPE DESCRIPTION ==================== -->
+<h1 class="epydoc">type Certificate</h1><p class="nomargin-top"></p>
 <pre class="base-tree">
 object --+
          |
@@ -116,23 +116,6 @@ then the Certificate is also permanently written into certdb.</p>
           <td><span class="summary-sig"><a href="nss.nss.Certificate-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
         <span class="summary-sig-arg">S</span>,
         <span class="summary-sig-arg">...</span>)</span></td>
-          <td align="right" valign="top">
-            
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td><span class="summary-sig"><a href="nss.nss.Certificate-class.html#__repr__" class="summary-sig-name">__repr__</a>(<span class="summary-sig-arg">x</span>)</span><br />
-      repr(x)</td>
           <td align="right" valign="top">
             
             
@@ -443,21 +426,6 @@ returning True if so, False otherwise.</td>
       
     </td>
   </tr>
-  <tr>
-    <td colspan="2" class="summary">
-    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
-      <code>__delattr__</code>,
-      <code>__format__</code>,
-      <code>__getattribute__</code>,
-      <code>__hash__</code>,
-      <code>__reduce__</code>,
-      <code>__reduce_ex__</code>,
-      <code>__setattr__</code>,
-      <code>__sizeof__</code>,
-      <code>__subclasshook__</code>
-      </p>
-    </td>
-  </tr>
 </table>
 <!-- ==================== PROPERTIES ==================== -->
 <a name="section-Properties"></a>
@@ -481,7 +449,7 @@ returning True if so, False otherwise.</td>
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
         <a name="cert_type"></a><span class="summary-name">cert_type</span><br />
-      integer bitmask of NS_CERT_TYPE_* flags, see <a href="nss.nss-module.html#cert_type_flags" class="link">nss.cert_type_flags()</a>
+      integer bitmask of NS_CERT_TYPE_* flags, see <a href="nss.nss-module.html#cert_type_flags" class="link">nss.cert\_type\_flags()</a>
     </td>
   </tr>
 <tr>
@@ -644,13 +612,6 @@ returning True if so, False otherwise.</td>
       certificate version
     </td>
   </tr>
-  <tr>
-    <td colspan="2" class="summary">
-    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
-      <code>__class__</code>
-      </p>
-    </td>
-  </tr>
 </table>
 <!-- ==================== METHOD DETAILS ==================== -->
 <a name="section-MethodDetails"></a>
@@ -694,7 +655,7 @@ returning True if so, False otherwise.</td>
     <dd><ul class="nomargin-top">
         <li><strong class="pname"><code>data</code></strong> (SecItem or str or any buffer compatible object) - Data to initialize the certificate from, must be in DER format</li>
         <li><strong class="pname"><code>certdb</code></strong> (CertDB object or None) - CertDB certificate database object, if None then the default
-certdb will be supplied by calling <a href="nss.nss-module.html#get_default_certdb" class="link">nss.get_default_certdb()</a>.</li>
+certdb will be supplied by calling <a href="nss.nss-module.html#get_default_certdb" class="link">nss.get\_default\_certdb()</a>.</li>
         <li><strong class="pname"><code>perm</code></strong> (bool) - True if certificate should be permantely stored in the certdb.</li>
         <li><strong class="pname"><code>nickname</code></strong> (string) - certificate nickname.</li>
     </ul></dd>
@@ -725,29 +686,6 @@ certdb will be supplied by calling <a href="nss.nss-module.html#get_default_cert
     <dt>Returns: a new object with type S, a subtype of T</dt>
     <dt>Overrides:
         object.__new__
-    </dt>
-  </dl>
-</td></tr></table>
-</div>
-<a name="__repr__"></a>
-<div>
-<table class="details" border="1" cellpadding="3"
-       cellspacing="0" width="100%" bgcolor="white">
-<tr><td>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-  <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">__repr__</span>(<span class="sig-arg">x</span>)</span>
-    <br /><em class="fname">(Representation operator)</em>
-  </h3>
-  </td><td align="right" valign="top"
-    >&nbsp;
-    </td>
-  </tr></table>
-  
-  repr(x)
-  <dl class="fields">
-    <dt>Overrides:
-        object.__repr__
     </dt>
   </dl>
 </td></tr></table>
@@ -953,12 +891,12 @@ tuple.  The first item in the tuple is an integer
 representing the indentation level for that line. Any remaining items
 in the tuple are strings to be output on that line.</p>
 <p>The output of this function can be formatted into a single string by
-calling <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented_format()</a>, e.g.:</p>
+calling <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented\_format()</a>, e.g.:</p>
 <blockquote>
 print indented_format(obj.format_lines())</blockquote>
 <p>The reason this function returns a tuple as opposed to an single
 indented string is to support other text formatting systems such as
-GUI's with indentation controls.  See <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented_format()</a> for a
+GUI's with indentation controls.  See <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented\_format()</a> for a
 complete explanation.</p>
   <dl class="fields">
     <dt>Parameters:</dt>
@@ -1031,21 +969,21 @@ not be complete).</p>
 <blockquote>
 <dl class="rst-docutils">
 <dt>SEC_OID_PKCS12_KEY_USAGE</dt>
-<dd><a href="nss.nss-module.html#x509_key_usage" class="link">x509_key_usage()</a></dd>
+<dd><a href="nss.nss-module.html#x509_key_usage" class="link">x509\_key\_usage()</a></dd>
 <dt>SEC_OID_X509_SUBJECT_KEY_ID</dt>
-<dd><a href="nss.nss.SecItem-class.html#der_to_hex" class="link">SecItem.der_to_hex()</a></dd>
+<dd><a href="nss.nss.SecItem-class.html#der_to_hex" class="link">SecItem.der\_to\_hex()</a></dd>
 <dt>SEC_OID_X509_CRL_DIST_POINTS</dt>
 <dd><a href="nss.nss.CRLDistributionPts-class.html" class="link">CRLDistributionPts()</a></dd>
 <dt>case SEC_OID_X509_AUTH_KEY_ID</dt>
 <dd><a href="nss.nss.AuthKeyID-class.html" class="link">AuthKeyID()</a></dd>
 <dt>SEC_OID_X509_EXT_KEY_USAGE</dt>
-<dd><a href="nss.nss-module.html#x509_ext_key_usage" class="link">x509_ext_key_usage()</a></dd>
+<dd><a href="nss.nss-module.html#x509_ext_key_usage" class="link">x509\_ext\_key\_usage()</a></dd>
 <dt>SEC_OID_X509_BASIC_CONSTRAINTS</dt>
 <dd><a href="nss.nss.BasicConstraints-class.html" class="link">BasicConstraints()</a></dd>
 <dt>SEC_OID_X509_SUBJECT_ALT_NAME</dt>
-<dd><a href="nss.nss-module.html#x509_alt_name" class="link">x509_alt_name()</a></dd>
+<dd><a href="nss.nss-module.html#x509_alt_name" class="link">x509\_alt\_name()</a></dd>
 <dt>SEC_OID_X509_ISSUER_ALT_NAME</dt>
-<dd><a href="nss.nss-module.html#x509_alt_name" class="link">x509_alt_name()</a></dd>
+<dd><a href="nss.nss-module.html#x509_alt_name" class="link">x509\_alt\_name()</a></dd>
 </dl>
 </blockquote>
   <dl class="fields">
@@ -1116,8 +1054,8 @@ be a SecItem object containing a distinguished name.</li>
 flags if return_cert_type is True. This is the updated cert type
 after applying logic in the context of deciding if the cert is a
 CA cert or not. Hint: the cert_type value can be converted to text
-with <a href="nss.nss-module.html#cert_type_flags" class="link">nss.cert_type_flags()</a>. Hint: the unmodified cert type flags
-can be obtained with the <a href="nss.nss.Certificate-class.html#cert_type" class="link">Certificate.cert_type</a> property.</p>
+with <a href="nss.nss-module.html#cert_type_flags" class="link">nss.cert\_type\_flags()</a>. Hint: the unmodified cert type flags
+can be obtained with the <a href="nss.nss.Certificate-class.html#cert_type" class="link">Certificate.cert\_type</a> property.</p>
   <dl class="fields">
     <dt>Parameters:</dt>
     <dd><ul class="nomargin-top">
@@ -1190,9 +1128,9 @@ tested for existence in the dabase until a unique name is found.</li>
     <dd><ul class="nomargin-top">
         <li><strong class="pname"><code>string</code></strong> (trust) - NSS trust string</li>
         <li><strong class="pname"><code>certdb</code></strong> (CertDB object or None) - CertDB certificate database object, if None then the default
-certdb will be supplied by calling <a href="nss.nss-module.html#get_default_certdb" class="link">nss.get_default_certdb()</a>.</li>
+certdb will be supplied by calling <a href="nss.nss-module.html#get_default_certdb" class="link">nss.get\_default\_certdb()</a>.</li>
         <li><strong class="pname"><code>slot</code></strong> (<a href="nss.nss.PK11Slot-class.html" class="link">PK11Slot</a> object) - The PK11 slot to use. If None defaults to internal
-slot, see <a href="nss.nss-module.html#get_internal_key_slot" class="link">nss.get_internal_key_slot()</a></li>
+slot, see <a href="nss.nss-module.html#get_internal_key_slot" class="link">nss.get\_internal\_key\_slot()</a></li>
         <li><strong class="pname"><code>user_dataN</code></strong> (object) - zero or more caller supplied parameters which will
 be passed to the password callback function</li>
     </ul></dd>
@@ -1276,7 +1214,7 @@ trust the issuer.</p>
 <p>If required_usages is non-zero, the returned bitmap is only for those
 required usages, otherwise it is for all possible usages.</p>
 <p>Hint: You can obtain a printable representation of the usage flags
-via <a href="nss.nss-module.html#cert_usage_flags" class="link">cert_usage_flags</a>.</p>
+via <a href="nss.nss-module.html#cert_usage_flags" class="link">cert\_usage\_flags</a>.</p>
 <p>Note: Anytime a NSPR or NSS function returns an error in python-nss it
 raises a NSPRError exception. When an exception is raised the normal
 return values are discarded because the flow of control continues at
@@ -1397,7 +1335,7 @@ trust the issuer.</p>
 required_usages is non-zero, the returned bitmap is only for those
 required usages, otherwise it is for all possible usages.</p>
 <p>Hint: You can obtain a printable representation of the usage flags
-via <a href="nss.nss-module.html#cert_usage_flags" class="link">cert_usage_flags</a>.</p>
+via <a href="nss.nss-module.html#cert_usage_flags" class="link">cert\_usage\_flags</a>.</p>
 <p>Note: See the <a href="nss.nss.Certificate-class.html#verify" class="link">Certificate.verify</a> documentation for details on how
 the Certificate verification functions handle errors.</p>
   <dl class="fields">
@@ -1454,7 +1392,7 @@ object with diagnostic information detailing the reasons for a validation failur
 <p>If required_usages is non-zero, the returned bitmap is only for those
 required usages, otherwise it is for all possible usages.</p>
 <p>Hint: You can obtain a printable representation of the usage flags
-via <a href="nss.nss-module.html#cert_usage_flags" class="link">cert_usage_flags</a>.</p>
+via <a href="nss.nss-module.html#cert_usage_flags" class="link">cert\_usage\_flags</a>.</p>
 <p>Note: See the <a href="nss.nss.Certificate-class.html#verify" class="link">Certificate.verify</a> documentation for details on how
 the Certificate verification functions handle errors.</p>
   <dl class="fields">
@@ -1501,7 +1439,7 @@ be passed to the password callback function</li>
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Mon Oct 27 11:17:10 2014
+    Generated by Epydoc 3.0.1
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

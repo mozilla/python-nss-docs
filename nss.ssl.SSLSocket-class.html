@@ -55,8 +55,8 @@
     </td>
   </tr>
 </table>
-<!-- ==================== CLASS DESCRIPTION ==================== -->
-<h1 class="epydoc">Class SSLSocket</h1><p class="nomargin-top"></p>
+<!-- ==================== TYPE DESCRIPTION ==================== -->
+<h1 class="epydoc">type SSLSocket</h1><p class="nomargin-top"></p>
 <pre class="base-tree">
 object --+    
          |    
@@ -259,7 +259,7 @@ middle of doing a handshake.</td>
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a href="nss.ssl.SSLSocket-class.html#force_handshake_timeout" class="summary-sig-name">force_handshake_timeout</a>(<span class="summary-sig-arg">timeout</span>)</span><br />
-      See the documentation for <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force_handshake()</a>.</td>
+      See the documentation for <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force\_handshake()</a>.</td>
           <td align="right" valign="top">
             
             
@@ -312,7 +312,7 @@ the socket.</td>
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a name="get_hostname"></a><span class="summary-sig-name">get_hostname</span>()</span><br />
-      <a href="nss.ssl.SSLSocket-class.html#get_hostname" class="link">SSLSocket.get_hostname()</a> is used by certificate authentication callback
+      <a href="nss.ssl.SSLSocket-class.html#get_hostname" class="link">SSLSocket.get\_hostname()</a> is used by certificate authentication callback
 function to obtain the domain name of the desired SSL server for the
 purpose of comparing it with the domain name in the certificate
 presented by the server actually contacted.</td>
@@ -349,7 +349,7 @@ presented by the server actually contacted.</td>
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a href="nss.ssl.SSLSocket-class.html#get_peer_certificate" class="summary-sig-name">get_peer_certificate</a>()</span><br />
-      <a href="nss.ssl.SSLSocket-class.html#get_peer_certificate" class="link">SSLSocket.get_peer_certificate()</a> is used by certificate
+      <a href="nss.ssl.SSLSocket-class.html#get_peer_certificate" class="link">SSLSocket.get\_peer\_certificate()</a> is used by certificate
 authentication and bad-certificate callback functions to obtain the
 certificate under scrutiny.</td>
           <td align="right" valign="top">
@@ -369,7 +369,7 @@ certificate under scrutiny.</td>
         <tr>
           <td><span class="summary-sig"><a name="get_pkcs11_pin_arg"></a><span class="summary-sig-name">get_pkcs11_pin_arg</span>()</span><br />
       Returns a tuple of arguments or None if not previously set with
-<a href="nss.ssl.SSLSocket-class.html#set_pkcs11_pin_arg" class="link">SSLSocket.set_pkcs11_pin_arg()</a></td>
+<a href="nss.ssl.SSLSocket-class.html#set_pkcs11_pin_arg" class="link">SSLSocket.set\_pkcs11\_pin\_arg()</a></td>
           <td align="right" valign="top">
             
             
@@ -526,7 +526,7 @@ already completed one handshake.</td>
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="summary-sig-name">reset_handshake</a>(<span class="summary-sig-arg">as_server</span>)</span><br />
-      Calling <a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="link">SSLSocket.reset_handshake()</a> causes the SSL handshake protocol
+      Calling <a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="link">SSLSocket.reset\_handshake()</a> causes the SSL handshake protocol
 to start from the beginning on the next I/O operation.</td>
           <td align="right" valign="top">
             
@@ -719,7 +719,6 @@ session when it is tunneling through a proxy.</td>
     <td colspan="2" class="summary">
     <p class="indent-wrapped-lines"><b>Inherited from <code><a href="nss.io.Socket-class.html">io.Socket</a></code></b>:
       <code><a href="nss.io.Socket-class.html#__iter__">__iter__</a></code>,
-      <code><a href="nss.io.Socket-class.html#__repr__">__repr__</a></code>,
       <code><a href="nss.io.Socket-class.html#__str__">__str__</a></code>,
       <code><a href="nss.io.Socket-class.html#accept_read">accept_read</a></code>,
       <code><a href="nss.io.Socket-class.html#bind">bind</a></code>,
@@ -742,17 +741,6 @@ session when it is tunneling through a proxy.</td>
       <code><a href="nss.io.Socket-class.html#sendall">sendall</a></code>,
       <code><a href="nss.io.Socket-class.html#set_socket_option">set_socket_option</a></code>,
       <code><a href="nss.io.Socket-class.html#shutdown">shutdown</a></code>
-      </p>
-    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
-      <code>__delattr__</code>,
-      <code>__format__</code>,
-      <code>__getattribute__</code>,
-      <code>__hash__</code>,
-      <code>__reduce__</code>,
-      <code>__reduce_ex__</code>,
-      <code>__setattr__</code>,
-      <code>__sizeof__</code>,
-      <code>__subclasshook__</code>
       </p>
     </td>
   </tr>
@@ -825,9 +813,6 @@ communication.</td>
       <code><a href="nss.io.Socket-class.html#family">family</a></code>,
       <code><a href="nss.io.Socket-class.html#netaddr">netaddr</a></code>
       </p>
-    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
-      <code>__class__</code>
-      </p>
     </td>
   </tr>
 </table>
@@ -888,7 +873,7 @@ communication.</td>
 </dl></li>
     </ul></dd>
     <dt>Overrides:
-        object.__init__
+        <a href="nss.io.Socket-class.html#__init__">io.Socket.__init__</a>
     </dt>
   </dl>
 </td></tr></table>
@@ -913,7 +898,7 @@ communication.</td>
   <dl class="fields">
     <dt>Returns: a new object with type S, a subtype of T</dt>
     <dt>Overrides:
-        object.__new__
+        <a href="nss.io.Socket-class.html#__new__">io.Socket.__new__</a>
     </dt>
   </dl>
 </td></tr></table>
@@ -974,7 +959,7 @@ Networkaddress object for the peer.</p>
   </tr></table>
   
   Configures a listen socket with the information needed to handshake as
-an SSL server. <a href="nss.ssl.SSLSocket-class.html#config_secure_server" class="link">SSLSocket.config_secure_server()</a> requires the
+an SSL server. <a href="nss.ssl.SSLSocket-class.html#config_secure_server" class="link">SSLSocket.config\_secure\_server()</a> requires the
 certificate for the server and the server's private key.
   <dl class="fields">
     <dt>Parameters:</dt>
@@ -1034,12 +1019,12 @@ tuple.  The first item in the tuple is an integer
 representing the indentation level for that line. Any remaining items
 in the tuple are strings to be output on that line.</p>
 <p>The output of this function can be formatted into a single string by
-calling <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented_format()</a>, e.g.:</p>
+calling <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented\_format()</a>, e.g.:</p>
 <blockquote>
 print indented_format(obj.format_lines())</blockquote>
 <p>The reason this function returns a tuple as opposed to an single
 indented string is to support other text formatting systems such as
-GUI's with indentation controls.  See <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented_format()</a> for a
+GUI's with indentation controls.  See <a href="nss.nss-module.html#indented_format" class="link">nss.nss.indented\_format()</a> for a
 complete explanation.</p>
   <dl class="fields">
     <dt>Parameters:</dt>
@@ -1068,7 +1053,7 @@ to this starting level.</li>
   <p>Returns the number of bytes waiting in internal SSL buffers to be read
 by the local application from the SSL socket.</p>
 <p>If SSL_SECURITY has not been enabled with a call to
-<a href="nss.ssl-module.html#set_ssl_default_option" class="link">ssl.set_ssl_default_option()</a> or <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set_ssl_option()</a>, the
+<a href="nss.ssl-module.html#set_ssl_default_option" class="link">ssl.set\_ssl\_default\_option()</a> or <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set\_ssl\_option()</a>, the
 function returns zero.</p>
   <dl class="fields">
   </dl>
@@ -1097,14 +1082,14 @@ handshakes, the function can return either because the handshake is
 complete, or because application data has been received on the
 connection that must be processed (that is, the application must read
 it) before the handshake can continue. You can use
-<a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force_handshake()</a> when a handshake is desired but neither
+<a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force\_handshake()</a> when a handshake is desired but neither
 end has anything to say immediately. This occurs, for example, when an
 HTTPS server has received a request and determines that before it can
 answer the request, it needs to request an authentication certificate
 from the client. At the HTTP protocol level, nothing more is being
 said (that is, no HTTP request or response is being sent), so the
-server uses <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force_handshake()</a> to make the handshake
-occur. <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force_handshake()</a> does not prepare a socket to do a
+server uses <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force\_handshake()</a> to make the handshake
+occur. <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force\_handshake()</a> does not prepare a socket to do a
 handshake by itself. The following functions prepare a socket to do a
 handshake:</p>
 <blockquote>
@@ -1117,7 +1102,7 @@ handshake:</p>
 (for sockets that were connected or accepted prior to being imported)</li>
 </ul>
 </blockquote>
-<p>A call to <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force_handshake()</a> will almost always be preceded
+<p>A call to <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force\_handshake()</a> will almost always be preceded
 by one of those functions. In versions prior to NSS 1.2, you cannot
 force a subsequent handshake. If you use this function after the
 initial handshake, it returns immediately without forcing a handshake.</p>
@@ -1139,7 +1124,7 @@ initial handshake, it returns immediately without forcing a handshake.</p>
     </td>
   </tr></table>
   
-  See the documentation for <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force_handshake()</a>. This function
+  See the documentation for <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force\_handshake()</a>. This function
 adds a timeout interval.
   <dl class="fields">
     <dt>Parameters:</dt>
@@ -1188,11 +1173,11 @@ the socket.
     </td>
   </tr></table>
   
-  <a href="nss.ssl.SSLSocket-class.html#get_peer_certificate" class="link">SSLSocket.get_peer_certificate()</a> is used by certificate
+  <a href="nss.ssl.SSLSocket-class.html#get_peer_certificate" class="link">SSLSocket.get\_peer\_certificate()</a> is used by certificate
 authentication and bad-certificate callback functions to obtain the
 certificate under scrutiny. If the client calls
-<a href="nss.ssl.SSLSocket-class.html#get_peer_certificate" class="link">SSLSocket.get_peer_certificate()</a>, it always returns the server's
-certificate. If the server calls <a href="nss.ssl.SSLSocket-class.html#get_peer_certificate" class="link">SSLSocket.get_peer_certificate()</a>, it
+<a href="nss.ssl.SSLSocket-class.html#get_peer_certificate" class="link">SSLSocket.get\_peer\_certificate()</a>, it always returns the server's
+certificate. If the server calls <a href="nss.ssl.SSLSocket-class.html#get_peer_certificate" class="link">SSLSocket.get\_peer\_certificate()</a>, it
 may return None if client authentication is not enabled or if the
 client had no certificate when asked.
   <dl class="fields">
@@ -1302,7 +1287,7 @@ certificate is supplied, the string is 'no certificate'</dd>
   </tr></table>
   
   Retrieves the value of a specified SSL option. Refer to the
-documentation for <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set_ssl_option()</a> for an explanation of the
+documentation for <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set\_ssl\_option()</a> for an explanation of the
 possible values.
   <dl class="fields">
     <dt>Parameters:</dt>
@@ -1404,9 +1389,9 @@ the symmetric keys to foil potential
 attackers. <a href="nss.ssl.SSLSocket-class.html#rehandshake" class="link">SSLSocket.rehandshake()</a> only initiates the new handshake by
 sending the first message of that handshake. To drive the new
 handshake to completion, you must either call
-<a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force_handshake()</a> or do another I/O operation (read or
+<a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force\_handshake()</a> or do another I/O operation (read or
 write) on the socket. A call to <a href="nss.ssl.SSLSocket-class.html#rehandshake" class="link">SSLSocket.rehandshake()</a> is typically
-followed by a call to <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force_handshake()</a>.</p>
+followed by a call to <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force\_handshake()</a>.</p>
   <dl class="fields">
     <dt>Parameters:</dt>
     <dd><ul class="nomargin-top">
@@ -1463,12 +1448,12 @@ adds a timeout interval.
     </td>
   </tr></table>
   
-  Calling <a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="link">SSLSocket.reset_handshake()</a> causes the SSL handshake protocol
+  Calling <a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="link">SSLSocket.reset\_handshake()</a> causes the SSL handshake protocol
 to start from the beginning on the next I/O operation. That is, the
 handshake starts with no cipher suite already in use, just as it does
 on the first handshake on a new socket. When an application imports a
 socket into SSL after the TCP connection on that socket has already
-been established, it must call <a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="link">SSLSocket.reset_handshake()</a> to
+been established, it must call <a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="link">SSLSocket.reset\_handshake()</a> to
 determine whether SSL should behave like an SSL client or an SSL
 server. Note that this step would not be necessary if the socket
 weren't already connected. For an SSL socket that is configured before
@@ -1692,14 +1677,14 @@ or None if the callback failed.</p>
 when a server asks for client authentication information. This
 callback function is required if your client application is going to
 support client authentication.</p>
-<p>The callback function set with <a href="nss.ssl.SSLSocket-class.html#set_client_auth_data_callback" class="link">SSLSocket.set_client_auth_data_callback()</a>
+<p>The callback function set with <a href="nss.ssl.SSLSocket-class.html#set_client_auth_data_callback" class="link">SSLSocket.set\_client\_auth\_data\_callback()</a>
 is used to get information from a client application when
 authentication is requested by the server. The callback function
 retrieves the client's private key and certificate. SSL provides an
 implementation of this callback function; see NSS_GetClientAuthData
 for details. Unlike SSL_AuthCertificate, NSS_GetClientAuthData is not
 a default callback function. You must set it explicitly with
-<a href="nss.ssl.SSLSocket-class.html#set_client_auth_data_callback" class="link">SSLSocket.set_client_auth_data_callback()</a> if you want to use it.</p>
+<a href="nss.ssl.SSLSocket-class.html#set_client_auth_data_callback" class="link">SSLSocket.set\_client\_auth\_data\_callback()</a> if you want to use it.</p>
 <p>Example:</p>
 <pre class="rst-literal-block">
 def client_auth_data_callback(ca_names, chosen_nickname, password, certdb):
@@ -1799,10 +1784,10 @@ needs to compare the domain name in the server's certificate against
 the domain name of the server the client was attempting to
 contact. This step is vital because it is the client's only protection
 against a man-in-the-middle attack. The client application uses
-<a href="nss.ssl.SSLSocket-class.html#set_hostname" class="link">SSLSocket.set_hostname()</a> to set the domain name of the desired server
+<a href="nss.ssl.SSLSocket-class.html#set_hostname" class="link">SSLSocket.set\_hostname()</a> to set the domain name of the desired server
 before performing the first SSL handshake. The client application's
 certificate authentication callback function gets this string by
-calling <a href="nss.ssl.SSLSocket-class.html#get_hostname" class="link">SSLSocket.get_hostname()</a>.
+calling <a href="nss.ssl.SSLSocket-class.html#get_hostname" class="link">SSLSocket.get\_hostname()</a>.
   <dl class="fields">
     <dt>Parameters:</dt>
     <dd><ul class="nomargin-top">
@@ -1878,8 +1863,8 @@ information that identifies that server. This additional identifying
 information is known as a peer ID. The peer ID is associated with a
 socket, and must be set before the SSL handshake occurs--that is,
 before the SSL handshake is initiated by a call to a function such as
-<a href="nss.io.Socket-class.html#read" class="link">SSLSocket.read()</a> or <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force_handshake()</a>. To set the peer ID,
-you use <a href="nss.ssl.SSLSocket-class.html#set_sock_peer_id" class="link">SSLSocket.set_sock_peer_id()</a>.</p>
+<a href="nss.io.Socket-class.html#read" class="link">SSLSocket.read()</a> or <a href="nss.ssl.SSLSocket-class.html#force_handshake" class="link">SSLSocket.force\_handshake()</a>. To set the peer ID,
+you use <a href="nss.ssl.SSLSocket-class.html#set_sock_peer_id" class="link">SSLSocket.set\_sock\_peer\_id()</a>.</p>
 <p>In summary, SSL uses three pieces of information to identify a
 server's entry in the client session cache: the hostname, port number,
 and peer ID. In the case of a client that is tunneling through a
@@ -2025,7 +2010,7 @@ if they knew, somehow, that the server does not understand
 SSL2-compatible client hello messages.</p>
 <p>SSL_V2_COMPATIBLE_HELLO tells the SSL library whether or not to send
 SSL3 client hello messages in SSL2-compatible format. Note that
-calling <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set_ssl_option()</a> to set SSL_V2_COMPATIBLE_HELLO to
+calling <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set\_ssl\_option()</a> to set SSL_V2_COMPATIBLE_HELLO to
 False implicitly also sets the SSL_ENABLE_SSL2 option to False for
 that SSL socket. Calling SSL_EnableDefault to change the application
 default setting for SSL_V2_COMPATIBLE_HELLO to False implicitly also
@@ -2041,9 +2026,9 @@ SSL3 and TLS are enabled, all SSL3/TLS cipher suites that are enabled
 are enabled for both SSL3 and TLS.</p>
 <p>When an application imports a socket into SSL after the TCP connection
 on that socket has already been established, it must call
-<a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="link">SSLSocket.reset_handshake()</a> to indicate whether the socket is for a
+<a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="link">SSLSocket.reset\_handshake()</a> to indicate whether the socket is for a
 client or server. At first glance this may seem unnecessary, since
-<a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set_ssl_option()</a> can set SSL_HANDSHAKE_AS_CLIENT or
+<a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set\_ssl\_option()</a> can set SSL_HANDSHAKE_AS_CLIENT or
 SSL_HANDSHAKE_AS_SERVER. However, these settings control the behavior
 of <a href="nss.io.Socket-class.html#connect" class="link">SSLSocket.connect()</a> and <a href="nss.ssl.SSLSocket-class.html#accept" class="link">SSLSocket.accept()</a> only; if you don't call
 one of those functions after importing a non-SSL socket with
@@ -2063,15 +2048,15 @@ SSL_HANDSHAKE_AS_CLIENT and SSL_HANDSHAKE_AS_SERVER are initially set
 to off--that is, the process default for both values is False when the
 process begins. The process default can be changed from the initial
 values by using SSL_EnableDefault, and the value for a particular
-socket can be changed by using <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set_ssl_option()</a>.</p>
+socket can be changed by using <a href="nss.ssl.SSLSocket-class.html#set_ssl_option" class="link">SSLSocket.set\_ssl\_option()</a>.</p>
 <p>If a socket that is already connected gets imported into SSL after it
 has been connected (that is, after <a href="nss.ssl.SSLSocket-class.html#accept" class="link">SSLSocket.accept()</a> or
 <a href="nss.io.Socket-class.html#connect" class="link">SSLSocket.connect()</a> has returned), then no implicit SSL handshake
 configuration as a client or server will have been done by
 <a href="nss.io.Socket-class.html#connect" class="link">SSLSocket.connect()</a> or <a href="nss.ssl.SSLSocket-class.html#accept" class="link">SSLSocket.accept()</a> on that socket. In this
-case, a call to <a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="link">SSLSocket.reset_handshake()</a> is required to explicitly
+case, a call to <a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="link">SSLSocket.reset\_handshake()</a> is required to explicitly
 configure the socket to handshake as a client or as a server. If
-<a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="link">SSLSocket.reset_handshake()</a> is not called to explicitly configure the
+<a href="nss.ssl.SSLSocket-class.html#reset_handshake" class="link">SSLSocket.reset\_handshake()</a> is not called to explicitly configure the
 socket handshake, a crash is likely to occur when the first I/O
 operation is done on the socket after it is imported into SSL.</p>
 <table class="rst-docutils footnote" frame="void" id="rst-id5" rules="none">
@@ -2105,9 +2090,9 @@ documentation for updated recomendations on protocol selection.</td></tr>
     <dt>Parameters:</dt>
     <dd><ul class="nomargin-top">
         <li><strong class="pname"><code>min_version</code></strong> (int or string) - Either a SSL_LIBRARY_VERSION_* enumerated constant or it's
-string equivalent, see <a href="nss.ssl-module.html#ssl_library_version_from_name" class="link">ssl_library_version_from_name()</a></li>
+string equivalent, see <a href="nss.ssl-module.html#ssl_library_version_from_name" class="link">ssl\_library\_version\_from\_name()</a></li>
         <li><strong class="pname"><code>max_version</code></strong> (int or string) - Either a SSL_LIBRARY_VERSION_* enumerated constant or it's
-string equivalent, see <a href="nss.ssl-module.html#ssl_library_version_from_name" class="link">ssl_library_version_from_name()</a></li>
+string equivalent, see <a href="nss.ssl-module.html#ssl_library_version_from_name" class="link">ssl\_library\_version\_from\_name()</a></li>
     </ul></dd>
   </dl>
 </td></tr></table>
@@ -2139,7 +2124,7 @@ string equivalent, see <a href="nss.ssl-module.html#ssl_library_version_from_nam
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Mon Oct 27 11:17:10 2014
+    Generated by Epydoc 3.0.1
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
