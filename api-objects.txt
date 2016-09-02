@@ -1105,6 +1105,7 @@ nss.nss.CKA_RESET_ON_INIT	nss.nss-module.html#CKA_RESET_ON_INIT
 nss.nss.SEC_OID_UNKNOWN	nss.nss-module.html#SEC_OID_UNKNOWN
 nss.nss.CKM_TWOFISH_KEY_GEN	nss.nss-module.html#CKM_TWOFISH_KEY_GEN
 nss.nss.PK11CertListRootUnique	nss.nss-module.html#PK11CertListRootUnique
+nss.nss.get_all_tokens	nss.nss-module.html#get_all_tokens
 nss.nss.SEC_OID_PKIX_OCSP	nss.nss-module.html#SEC_OID_PKIX_OCSP
 nss.nss.SEC_OID_MD5	nss.nss-module.html#SEC_OID_MD5
 nss.nss.CKM_KEY_WRAP_LYNKS	nss.nss-module.html#CKM_KEY_WRAP_LYNKS
@@ -1362,7 +1363,7 @@ nss.ssl.TLS_ECDHE_ECDSA_WITH_NULL_SHA	nss.ssl-module.html#TLS_ECDHE_ECDSA_WITH_N
 nss.ssl.TLS_DH_DSS_WITH_DES_CBC_SHA	nss.ssl-module.html#TLS_DH_DSS_WITH_DES_CBC_SHA
 nss.ssl.TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA	nss.ssl-module.html#TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA
 nss.ssl.TLS_DHE_DSS_WITH_DES_CBC_SHA	nss.ssl-module.html#TLS_DHE_DSS_WITH_DES_CBC_SHA
-nss.ssl.TLS_ECDH_RSA_WITH_AES_256_CBC_SHA	nss.ssl-module.html#TLS_ECDH_RSA_WITH_AES_256_CBC_SHA
+nss.ssl.TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256	nss.ssl-module.html#TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256
 nss.ssl.SSL_RSA_EXPORT_WITH_RC2_CBC_40_MD5	nss.ssl-module.html#SSL_RSA_EXPORT_WITH_RC2_CBC_40_MD5
 nss.ssl.SSL_RSA_FIPS_WITH_DES_CBC_SHA	nss.ssl-module.html#SSL_RSA_FIPS_WITH_DES_CBC_SHA
 nss.ssl.TLS_RSA_WITH_RC4_128_SHA	nss.ssl-module.html#TLS_RSA_WITH_RC4_128_SHA
@@ -1393,6 +1394,7 @@ nss.ssl.TLS_RSA_WITH_NULL_SHA	nss.ssl-module.html#TLS_RSA_WITH_NULL_SHA
 nss.ssl.SSL_RSA_WITH_RC4_128_MD5	nss.ssl-module.html#SSL_RSA_WITH_RC4_128_MD5
 nss.ssl.TLS_DH_ANON_WITH_CAMELLIA_256_CBC_SHA	nss.ssl-module.html#TLS_DH_ANON_WITH_CAMELLIA_256_CBC_SHA
 nss.ssl.ssl_cipher_suite_from_name	nss.ssl-module.html#ssl_cipher_suite_from_name
+nss.ssl.TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256	nss.ssl-module.html#TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
 nss.ssl.TLS_RSA_WITH_IDEA_CBC_SHA	nss.ssl-module.html#TLS_RSA_WITH_IDEA_CBC_SHA
 nss.ssl.TLS_DHE_RSA_WITH_AES_256_CBC_SHA256	nss.ssl-module.html#TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
 nss.ssl.SSL_NO_CACHE	nss.ssl-module.html#SSL_NO_CACHE
@@ -1404,6 +1406,7 @@ nss.ssl.SSL_LIBRARY_VERSION_TLS_1_1	nss.ssl-module.html#SSL_LIBRARY_VERSION_TLS_
 nss.ssl.SSL_LIBRARY_VERSION_TLS_1_0	nss.ssl-module.html#SSL_LIBRARY_VERSION_TLS_1_0
 nss.ssl.SSL_DH_ANON_EXPORT_WITH_DES40_CBC_SHA	nss.ssl-module.html#SSL_DH_ANON_EXPORT_WITH_DES40_CBC_SHA
 nss.ssl.SSL_RSA_WITH_NULL_MD5	nss.ssl-module.html#SSL_RSA_WITH_NULL_MD5
+nss.ssl.TLS_ECDH_RSA_WITH_AES_256_CBC_SHA	nss.ssl-module.html#TLS_ECDH_RSA_WITH_AES_256_CBC_SHA
 nss.ssl.SSL_EN_RC2_128_CBC_WITH_MD5	nss.ssl-module.html#SSL_EN_RC2_128_CBC_WITH_MD5
 nss.ssl.TLS_ECDH_ECDSA_WITH_NULL_SHA	nss.ssl-module.html#TLS_ECDH_ECDSA_WITH_NULL_SHA
 nss.ssl.SSL_RESTRICTED	nss.ssl-module.html#SSL_RESTRICTED
@@ -1491,7 +1494,7 @@ nss.ssl.SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA	nss.ssl-module.html#SSL_DHE_RSA_EX
 nss.ssl.set_default_cipher_pref	nss.ssl-module.html#set_default_cipher_pref
 nss.ssl.SSL_CK_RC2_128_CBC_EXPORT40_WITH_MD5	nss.ssl-module.html#SSL_CK_RC2_128_CBC_EXPORT40_WITH_MD5
 nss.ssl.SSL_DHE_DSS_WITH_DES_CBC_SHA	nss.ssl-module.html#SSL_DHE_DSS_WITH_DES_CBC_SHA
-nss.ssl.TLS_DH_RSA_WITH_AES_256_CBC_SHA	nss.ssl-module.html#TLS_DH_RSA_WITH_AES_256_CBC_SHA
+nss.ssl.TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256	nss.ssl-module.html#TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256
 nss.ssl.SRTP_AES128_CM_HMAC_SHA1_80	nss.ssl-module.html#SRTP_AES128_CM_HMAC_SHA1_80
 nss.ssl.set_cipher_policy	nss.ssl-module.html#set_cipher_policy
 nss.ssl.TLS_DHE_RSA_WITH_DES_CBC_SHA	nss.ssl-module.html#TLS_DHE_RSA_WITH_DES_CBC_SHA
@@ -1503,6 +1506,7 @@ nss.ssl.SSL_REQUIRE_CERTIFICATE	nss.ssl-module.html#SSL_REQUIRE_CERTIFICATE
 nss.ssl.SSL_NOT_ALLOWED	nss.ssl-module.html#SSL_NOT_ALLOWED
 nss.ssl.TLS_DH_DSS_WITH_AES_256_CBC_SHA	nss.ssl-module.html#TLS_DH_DSS_WITH_AES_256_CBC_SHA
 nss.ssl.TLS_RSA_WITH_NULL_MD5	nss.ssl-module.html#TLS_RSA_WITH_NULL_MD5
+nss.ssl.TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256	nss.ssl-module.html#TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256
 nss.ssl.config_server_session_id_cache	nss.ssl-module.html#config_server_session_id_cache
 nss.ssl.TLS_RSA_WITH_AES_128_GCM_SHA256	nss.ssl-module.html#TLS_RSA_WITH_AES_128_GCM_SHA256
 nss.ssl.set_ssl_default_option	nss.ssl-module.html#set_ssl_default_option
@@ -1545,6 +1549,7 @@ nss.ssl.tls1.2	nss.ssl-module.html#tls1.2
 nss.ssl._C_API	nss.ssl-module.html#_C_API
 nss.ssl.SSL_FORTEZZA_DMS_WITH_RC4_128_SHA	nss.ssl-module.html#SSL_FORTEZZA_DMS_WITH_RC4_128_SHA
 nss.ssl.SSL_RSA_WITH_RC4_128_SHA	nss.ssl-module.html#SSL_RSA_WITH_RC4_128_SHA
+nss.ssl.TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256	nss.ssl-module.html#TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
 nss.ssl.set_default_ssl_version_range	nss.ssl-module.html#set_default_ssl_version_range
 nss.ssl.TLS_RSA_EXPORT1024_WITH_RC4_56_SHA	nss.ssl-module.html#TLS_RSA_EXPORT1024_WITH_RC4_56_SHA
 nss.ssl.ssl_library_version_name	nss.ssl-module.html#ssl_library_version_name
@@ -1560,6 +1565,7 @@ nss.ssl.SSL_EN_DES_192_EDE3_CBC_WITH_MD5	nss.ssl-module.html#SSL_EN_DES_192_EDE3
 nss.ssl.SSL_ALLOWED	nss.ssl-module.html#SSL_ALLOWED
 nss.ssl.TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA	nss.ssl-module.html#TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA
 nss.ssl.SSL_RSA_WITH_3DES_EDE_CBC_SHA	nss.ssl-module.html#SSL_RSA_WITH_3DES_EDE_CBC_SHA
+nss.ssl.TLS_DH_RSA_WITH_AES_256_CBC_SHA	nss.ssl-module.html#TLS_DH_RSA_WITH_AES_256_CBC_SHA
 nss.ssl.config_server_session_id_cache_with_opt	nss.ssl-module.html#config_server_session_id_cache_with_opt
 nss.ssl.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA	nss.ssl-module.html#TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
 nss.ssl.TLS_RSA_WITH_AES_128_CBC_SHA	nss.ssl-module.html#TLS_RSA_WITH_AES_128_CBC_SHA

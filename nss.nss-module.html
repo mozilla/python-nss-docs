@@ -820,6 +820,26 @@ cert store to stdout.</td>
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">(PK11Slot, ...)</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="nss.nss-module.html#get_all_tokens" class="summary-sig-name">get_all_tokens</a>(<span class="summary-sig-arg">mechanism</span>=<span class="summary-sig-default">CKM_INVALID_MECHANISM</span>,
+        <span class="summary-sig-arg">need_rw</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">load_certs</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">pin_args</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Return a tuple of PK11Slot objects.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -7128,7 +7148,7 @@ usage bit string.</td>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="_C_API"></a><span class="summary-name">_C_API</span> = <code title="&lt;capsule object &quot;_C_API&quot; at 0x7fc544e3c420&gt;">&lt;capsule object &quot;_C_API&quot; at 0x7fc544e3c420&gt;</code>
+        <a name="_C_API"></a><span class="summary-name">_C_API</span> = <code title="&lt;capsule object &quot;_C_API&quot; at 0x7f1d0752e870&gt;">&lt;capsule object &quot;_C_API&quot; at 0x7f1d0752e870&gt;</code>
     </td>
   </tr>
 <tr>
@@ -8427,6 +8447,78 @@ it into line tuples for text output.</p>
         <li><strong class="pname"><code>num_bytes</code></strong> (integer) - Number of num_bytes to generate (must be non-negative)</li>
     </ul></dd>
     <dt>Returns: string</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_all_tokens"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_all_tokens</span>(<span class="sig-arg">mechanism</span>=<span class="sig-default">CKM_INVALID_MECHANISM</span>,
+        <span class="sig-arg">need_rw</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">load_certs</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">pin_args</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return a tuple of PK11Slot objects.</p>
+<p>Example:</p>
+<pre class="rst-literal-block">
+import nss.nss as nss
+nss.nss_init_nodb()
+
+slots = nss.get_all_tokens()
+for slot in slots:
+    print slot
+    print
+
+Slot Name:                         NSS User Private Key and Certificate Services
+Token Name:                        NSS Certificate DB
+Is Hardware:                       False
+Is Present:                        True
+Is Read Only:                      True
+Is Internal:                       True
+Needs Login:                       False
+Needs User Init:                   True
+Is Friendly:                       True
+Is Removable:                      False
+Has Protected Authentication Path: False
+Is Disabled:                       False (no reason)
+Has Root Certs:                    False
+Best Wrap Mechanism:               CKM_DES3_ECB (0x132)
+
+Slot Name:                         NSS Internal Cryptographic Services
+Token Name:                        NSS Generic Crypto Services
+Is Hardware:                       False
+Is Present:                        True
+Is Read Only:                      True
+Is Internal:                       True
+Needs Login:                       False
+Needs User Init:                   True
+Is Friendly:                       True
+Is Removable:                      False
+Has Protected Authentication Path: False
+Is Disabled:                       False (no reason)
+Has Root Certs:                    False
+Best Wrap Mechanism:               CKM_DES3_ECB (0x132)
+</pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>mechanism</code></strong> (int) - key mechanism enumeration constant (CKM_*).
+Use CKM_INVALID_MECHANISM to get all tokens.</li>
+        <li><strong class="pname"><code>need_rw</code></strong> (boolean) - need read/write</li>
+        <li><strong class="pname"><code>load_certs</code></strong> (boolean) - load certificates</li>
+        <li><strong class="pname"><code>pin_args</code></strong> (tuple) - Extra parameters which will
+be passed to the password callback function.</li>
+    </ul></dd>
+    <dt>Returns: (PK11Slot, ...)</dt>
   </dl>
 </td></tr></table>
 </div>
